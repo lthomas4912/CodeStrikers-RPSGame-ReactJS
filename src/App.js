@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./components/LoginContainer/Login.js";
 import SignUp from "./components/SignUpContainer/SignUp.js";
-import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js"
+import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 
 function App() {
   return (<Router>
