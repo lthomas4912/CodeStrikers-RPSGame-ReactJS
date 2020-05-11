@@ -13,6 +13,8 @@ import Image from 'react-bootstrap/Image';
 
 
 class WelcomeScreen extends Component {
+
+    
     render() {
         return (
             <Container >
