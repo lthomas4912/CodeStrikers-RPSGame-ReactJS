@@ -1,0 +1,23 @@
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.main-drop:hover{
+    background-color: #ff8400;
+}
+
+.main-drop:active{
+    background-color: #ff8400;
+}
+
+
+.main-drop {
+   
+    background-color: transparent;
+    float: right;
+}
+
+.main-drop a:hover {
+    background-color: #ededed;
+}

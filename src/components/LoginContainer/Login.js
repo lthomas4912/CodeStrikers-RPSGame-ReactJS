@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import axios from 'axios';
+// import { Link } from 'react-router-dom';
+
 
 class Login extends Component {
     constructor(props) {
@@ -50,9 +51,9 @@ class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <a href="/userHome" className="btn btn-primary btn-block">Submit</a>
                 <p className="forgot-password text-right">
-                    
+                    Haven't signed up? <a href="/sign-up">Sign-up</a>
                 </p>
             </form>
         );

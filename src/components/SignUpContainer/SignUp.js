@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class SignUp extends Component {
     render() {
         return (
@@ -33,7 +34,7 @@ class SignUp extends Component {
 
                 <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
-                    
+                    Already registered <a href="/sign-in">sign in?</a>
                 </p>
             </form>
         );
