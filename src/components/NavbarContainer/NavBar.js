@@ -23,12 +23,7 @@ function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to={"/userhome"}>User Home</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to={"/gamestats"}>Game Stats</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to={"/donate"}>Donate</Link>
-                                </li>
+                            
                             </ul>
                         </div>
                  </div>

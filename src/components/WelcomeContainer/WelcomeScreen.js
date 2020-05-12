@@ -37,4 +37,4 @@ class WelcomeScreen extends Component {
 
 export default WelcomeScreen;
 
-const Box = props => <Container>{props.children} </Container>;
+

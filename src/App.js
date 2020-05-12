@@ -10,7 +10,6 @@ import Donate from './components/DonateContainer/Donate.js';
 import GameStats from './components/GameStatsContainer/GameStats.js';
 import UserHome from './components/UserHomeContainer/UserHome.js';
 import NavBar from './components/NavbarContainer/NavBar.js';
-import DropDown from './components/DropDownContainer/DropDown.js';
 import Container from 'react-bootstrap/Container';
 
 
@@ -19,7 +18,7 @@ import Container from 'react-bootstrap/Container';
 function App() {
   return (<Router>
     <div className="App">
-       <DropDown />
+       <NavBar />
           
       <div className="auth-wrapper">
         <div className="auth-inner">

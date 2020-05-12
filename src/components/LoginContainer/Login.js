@@ -1,47 +1,21 @@
 import React, { Component } from "react";
-// import { Link } from 'react-router-dom';
+import './Login.css';
 
 
 class Login extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            userName: '',
-            password: ''
-        }
-    }
-
-    changeHandler = e => {
-        this.setState({ [ e.target.name]: e.target.value})
-    }
-
-    submitHandler = e => {
-        e.preventDefault();
-        console.log(this.state);
-        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
-        .then(response => {
-            console.log(response);
-        })
-        .catch(error => {
-            console.log(error);
-        })
-    }
-
     render() {
-        const { userName, password } = this.state;
         return (
-            <form onSubmit={this.submitHandler}>
+            <form>
                 <h3>Sign In</h3>
 
                 <div className="form-group">
                     <label>Username</label>
-                    <input type="text" className="form-control" value={userName} placeholder="Enter username" onChange={this.changeHandler} />
+                    <input type="text" className="form-control" placeholder="Enter username" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="text" className="form-control" value={password} placeholder="Enter password" onChange={this.changeHandler} />
+                    <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
                 <div className="form-group">
@@ -51,9 +25,9 @@ class Login extends Component {
                     </div>
                 </div>
 
-                <a href="/userHome" className="btn btn-primary btn-block">Submit</a>
+                <a href="/userhome" className="btn btn-primary btn-block">Submit</a>
                 <p className="forgot-password text-right">
-                    Haven't signed up? <a href="/sign-up">Sign-up</a>
+                    Forgot to Sign Up? <a href="/sign-up">Click Here</a>
                 </p>
             </form>
         );
