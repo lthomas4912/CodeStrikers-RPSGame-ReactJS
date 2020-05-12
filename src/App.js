@@ -8,7 +8,6 @@ import SignUp from "./components/SignUpContainer/SignUp.js";
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import UserHome from './components/UserHomeContainer/UserHome.js';
 import NavBar from './components/NavbarContainer/NavBar.js';
-import Container from 'react-bootstrap/Container';
 
 
 
@@ -34,4 +33,4 @@ function App() {
 
 export default App;
 
-const Layout = props => <Container>{props.children} </Container>;
+// const Layout = props => <Container>{props.children} </Container>;
