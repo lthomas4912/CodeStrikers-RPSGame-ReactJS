@@ -20,11 +20,11 @@ class WelcomeScreen extends Component {
             <Container >
                <Row>
           
-                <Box> <h3> Welcome </h3> </Box>
+                <Box> <h2> Welcome </h2> </Box>
            
                 </Row> 
 
-            <Row><Image className="main" src={ main } alt="main logo"  /></Row>
+            <Box><Image className="main" src={ main } alt="main logo"  /></Box>
 
             <Row className="wel-btn">
              <LoginButton />
@@ -37,4 +37,4 @@ class WelcomeScreen extends Component {
 
 export default WelcomeScreen;
 
-
+const Box = props => <Container className="box">{props.children} </Container>;

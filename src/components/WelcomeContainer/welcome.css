@@ -1,20 +1,25 @@
 .title {
     color: black;
+    
 }
 
 .main {
+    
     height: 200px;
     width: auto;
-    margin-left: -5%;
+    margin-right: 10%;
+    margin-bottom: 10%
 }
 
 .wel-btn {
     display: flex;
    justify-content: center;
    justify-content: space-evenly;
-   margin-top: 30px;
-   
+    
 }
 
-
+.box {
+    display:flex;
+    justify-content: center;
+}
 

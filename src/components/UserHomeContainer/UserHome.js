@@ -7,7 +7,7 @@ class UserHome extends Component {
         return (
             <div>
                 <h3 className="sm-title">React User Home Screen</h3>
-                 <a href="/gamestats" className="btn btn-primary btn-block">To Game Stats</a>
+                 
                  
             </div>
         );

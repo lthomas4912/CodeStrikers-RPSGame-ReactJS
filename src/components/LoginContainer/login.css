@@ -5,7 +5,8 @@
     }
 
 .btn{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -14,7 +15,7 @@
   background-color: #818285;
   border: none;
   border-radius: 25px;
- width: 100%;
+ width: 30%;
 }
 
 
