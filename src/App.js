@@ -10,12 +10,16 @@ import './App.css';
 import Login from "./components/LoginContainer/Login.js";
 import SignUp from "./components/SignUpContainer/SignUp.js";
 import UserHome from './components/UserHomeContainer/UserHome.js';
+
 import Game from  './components/GameContainer/Game.js';
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import Menu from './components/MenuContainer/Menu.js';
 import ForgotPassword from "./components/ForgotPasswordContainer/ForgotPassword.js";
 import EnglishInstructions from './components/InstructionContainer/EnglishInstructions.js';
 import SpanishInstructions from './components/InstructionContainer/SpanishInstructions.js';
+
+
+
 
 
 
@@ -51,4 +55,6 @@ function App() {
 }
 
 export default App;
+
+
 
