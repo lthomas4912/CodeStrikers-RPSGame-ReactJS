@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 
+<<<<<<< HEAD
+import Col from 'react-bootstrap/Col';
+
+export default class SignUp extends Component {
+=======
 
 class SignUp extends Component {
+>>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
     render() {
         return (
-            <form>
+            <Col className="">
+            <form className='sign-page'>
                 <h3>Sign Up</h3>
 
                 <div className="form-group">
@@ -32,13 +39,17 @@ class SignUp extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <button type="submit" className="btn btn-primary btn-block signup">Submit</button>
                 <p className="forgot-password text-right">
+<<<<<<< HEAD
+                    Already registered? <a href="/sign-in">Click Here!</a>
+=======
                     Already registered <a href="/sign-in">sign in?</a>
+>>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
                 </p>
             </form>
+            </Col>
         );
     }
 }
 
-export default SignUp;

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  font-size: 1em;
 }
 body {
-  background: #ff8400 !important;
-  min-height: 100vh;
+  background: #ffffff !important;
+  max-height: 50vh;
   display: flex;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
+  
 }
 
 h1,h2,h3,h4,h5,h6,label,span {
@@ -16,26 +18,23 @@ h1,h2,h3,h4,h5,h6,label,span {
   font-family: 'Fira Sans', sans-serif;
 }
 
-body, html, .App, #root, .auth-wrapper {
-  width: 100%;
+body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
+  width: auto;
   height: 100%;
 }
 
-.navbar-light {
-  background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
 
 .auth-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+
 }
 
 .auth-inner {
-  width: 450px;
-  margin: auto;
+  width: auto;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;
@@ -51,7 +50,7 @@ body, html, .App, #root, .auth-wrapper {
 .auth-wrapper h3 {
   text-align: center;
   margin: 0;
-  line-height: 1;
+  line-height: 1em;
   padding-bottom: 20px;
 }
 
@@ -62,7 +61,7 @@ body, html, .App, #root, .auth-wrapper {
 .forgot-password,
 .forgot-password a {
   text-align: right;
-  font-size: 13px;
+  /* font-size: 13px; */
   padding-top: 10px;
   color: #7f7d7d;
   margin: 0;
@@ -72,10 +71,151 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
-.wel-button {
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 60px;
-  background-color: white;
-  border-radius: 2em;
+
+
+/* Game Buttons CSS */
+
+
+
+.sel-btns{
+  display: flex;
+  align-content: space-between;
+  margin-top: 20px;
+  margin-right:10px;
 }
+
+.play-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.who-win{
+  display:flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Bungee;
+
+}
+
+.selectionButton{
+  display:flex;
+  margin-right:12px;
+
+}
+
+
+/* Login & Sign-up CSS */
+
+
+.row{
+  
+  justify-content: center;
+
+}
+
+
+/* Nav bar Css */
+
+.navi {
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  display:flex;
+  justify-content: center;
+  
+}
+
+
+/* Buttons CSS */
+
+
+.btn {
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: white;
+      background-color: #818285;
+      border: none;
+      border-radius: 25px;
+      margin-top: 15px;
+     
+     
+}
+
+.btn:hover{
+  background-color: #ff8400;
+  border:none;
+  outline:none;
+}
+
+.btn:active{
+  border:none;
+  outline:none;
+}
+ 
+
+
+
+/* Hands CSS */
+
+.hands{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+/* Menu & MenuBUtton CSS */
+
+.menu-btn {
+  display:flex;
+  position: relative;
+  justify-content: left;
+  background-color: #ededed;
+  margin-right:20px;
+  height:4em;
+  width:4em;
+  border-radius:25px;
+}
+
+.menu {
+  display:flex;
+  justify-content: center;
+  
+}
+
+.menu:hover, .menu:active {
+  color:#ff8400;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and(min-width: 320px) {
+
+  body,html, .App, #root, .auth-wrapper, .row {
+    width: 15em;
+    height: auto;
+    
+  }
+
+  
+
+  
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
