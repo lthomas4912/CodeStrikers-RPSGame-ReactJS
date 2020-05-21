@@ -1,17 +1,25 @@
 import React, { Component } from "react";
 
-class WelcomeScreen extends Component {
+import GetStartedButton from '../ButtonsContainer/GetStartedButton.js';
+
+
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+
+import rps from '../../assets/images/rps-logo.png';
+import './welcome.css';
+
+export default class WelcomeScreen extends Component {
     render() {
         return (
-            <div>
-                <h3>React Welcome Component</h3>
-                <div>
-                <button className="wel-button" href="#signup">Sign Up</button>
-                <button className="wel-button" href="#login">Login </button>
-                </div>
-            </div>
+            <Container>
+                <Row className="main-pic"><Image src={rps} height="150px" className="main" alt="main logo" /> </Row>
+                 <Row className='wel'> <h4> With</h4> </Row> {' '}
+                 <Row className='wel-title'><h3> Code Differently Pipeline Games  </h3> </Row>
+                 <Row className='start '> <GetStartedButton /> </Row>
+            </Container>
         );
     }
 }
 
-export default WelcomeScreen;

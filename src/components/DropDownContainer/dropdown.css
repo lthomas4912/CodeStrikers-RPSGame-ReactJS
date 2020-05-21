@@ -1,0 +1,24 @@
+.main-drop:hover .btn-success .btn-success:focus  .btn-success:hover{
+    background-color: #818285;
+    border-color: #818285;
+}
+
+.main-drop:active .btn-success{
+    background-color: #818285;
+    border-color: #818285;
+
+}
+
+.main-drop {
+    border-radius: 10%;
+}
+
+.btn-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #818285;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus, .btn-primary:hover, .show>.btn-primary.dropdown-toggle:focus {
+    color: #fff;
+    background-color: #818285;
+    border-color: #818285;
+}

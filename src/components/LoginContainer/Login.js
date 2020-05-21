@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import './Login.css';
+// import LoginButton from '../ButtonContainer/LoginButton'
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/cdlogo.png';
+import Row from 'react-bootstrap/Row';
+import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
-
-class Login extends Component {
+export default class Login extends Component {
     render() {
         return (
             <form>
-                <h3>Sign In</h3>
+               <Row className="logo">  <img  src={logo} height="200px" alt="pipeline"/> </Row>
+              
 
                 <div className="form-group">
                     <label>Username</label>
@@ -24,13 +30,13 @@ class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+                <UserHomeButton />
+                <p className="pw">Forgot 
+                        <Link className="link"to="/forgotpw">Password</Link>
+                        ?
+                    </p>
             </form>
         );
     }
 }
 
-export default Login;

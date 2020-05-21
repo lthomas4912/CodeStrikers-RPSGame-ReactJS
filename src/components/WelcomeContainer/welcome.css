@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+}
+
+.wel-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.main-pic{
+    display: flex;
+    justify-content: center;
+}
+
+.wel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    color: #ff8400;
+}
