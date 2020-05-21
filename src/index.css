@@ -23,9 +23,6 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   height: 100%;
 }
 
-.App {
-  
-}
 
 .auth-wrapper {
   display: flex;
