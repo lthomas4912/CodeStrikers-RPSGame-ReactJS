@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import Image from 'react-bootstrap/Image';
 
 
@@ -33,7 +34,24 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     <button id="donate-button" to="/donate">Donate</button>
             </div>
 
+=======
+import './userHome.css';
+
+
+class UserHome extends Component {
+    render() {
+        return (
+            <div>
+                <h3 className="sm-title">React User Home Screen</h3>
+                 
+                 
+            </div>
+>>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
         );
     }
 }
 
+<<<<<<< HEAD
+=======
+export default UserHome;
+>>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
