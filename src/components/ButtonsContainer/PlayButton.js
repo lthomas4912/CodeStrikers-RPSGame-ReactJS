@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
         <button
         type = "button"
         onClick = {() => {history.push('/game')}}
-        className="btn btn-primary btn-block">
+        className=" play-butn  ">
         Play Now!
         </button>
     ));

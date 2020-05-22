@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 
 import Player from '../PlayerContainer/Player.js';
 import Computer from '../ComputerContainer/Computer.js';
+import MenuButton from '../ButtonsContainer/MenuButton.js';
 
 
 const selection = ["rock", "paper", "scissors"];
@@ -51,6 +52,7 @@ export default class Game extends Component {
         return "Whomps, computer wins";
     }
     };
+    
 
     selectSelection = selection => {
     this.setState({
@@ -63,23 +65,24 @@ export default class Game extends Component {
     render() {
             const { playerOne, computer, winner } = this.state;
         return (
-            <div>
+            <div className='game-page'>
+                <MenuButton />
                 <Row className='hands'>
                 <Player selection={playerOne} />
                 <Computer compSelection={computer} />
                 </Row>
                 <div>
                     <Row className="sel-btns ">
-                    <button className="selectionButton btn"
+                    <button className="selectionButton "
                     onClick={() => this.selectSelection("rock")}
                     > rock 
                     </button>
                     <br></br>
-                    <button className="selectionButton btn"
+                    <button className="selectionButton "
                     onClick={() => this.selectSelection("paper")}
                     > paper 
                     </button>
-                    <button className="selectionButton btn"
+                    <button className="selectionButton "
                     onClick={() => this.selectSelection("scissors")}> scissors </button>
                     </Row>
                     

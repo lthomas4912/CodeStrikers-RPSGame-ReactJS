@@ -40,6 +40,7 @@
       border: none;
       border-radius: 25px;
       margin-top: 15px;
+      width:16em;
      
     }
     .signup:hover{
@@ -76,7 +77,6 @@
     }
 
     
-
     .play-butn {
         font-family: sans-serif;
         min-width: 100%;
@@ -86,7 +86,9 @@
         border: none;
         border-radius: 30px;
         background-color: #818285;
-        color: #ff8400;
+        color: #ffffff;
         font-weight: bold;
         
     }
+
+    

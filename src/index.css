@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
 
 * {
   box-sizing: border-box; 
@@ -19,8 +22,8 @@ h1,h2,h3,h4,h5,h6,label,span {
 }
 
 body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
-  width: auto;
-  height: 100%;
+  width: 50vmax;
+  height: 100vmax;
 }
 
 
@@ -29,6 +32,7 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+
 
 }
 
@@ -40,6 +44,7 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+  
 }
 
 .auth-wrapper .form-control:focus {
@@ -87,7 +92,9 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 .play-btn {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   margin-top: 15px;
+  padding: .2em;
 }
 
 .who-win{
@@ -95,6 +102,7 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   justify-content: center;
   margin-top: 20px;
   font-family: Bungee;
+  font-size: 1.25em;
 
 }
 
@@ -111,6 +119,7 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 .row{
   
   justify-content: center;
+  
 
 }
 
@@ -133,7 +142,6 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 .btn {
       display: flex;
       justify-content: center;
-      justify-content: space-evenly;
       cursor: pointer;
       text-align: center;
       text-decoration: none;
@@ -142,20 +150,18 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
       background-color: #818285;
       border: none;
       border-radius: 25px;
-      margin-top: 15px;
-     
-     
+      margin-top: 15px;   
 }
 
-.btn:hover{
+.btn:hover, .btn:active {
   background-color: #ff8400;
   border:none;
   outline:none;
 }
 
-.btn:active{
-  border:none;
-  outline:none;
+
+.spanish-btn {
+  width: 30em;
 }
  
 
@@ -166,20 +172,25 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 .hands{
   display:flex;
   justify-content: space-between;
+  justify-content: center;
 }
 
 
-/* Menu & MenuBUtton CSS */
+/* Menu & MenuButton CSS */
 
 .menu-btn {
   display:flex;
   position: relative;
   justify-content: left;
-  background-color: #ededed;
-  margin-right:20px;
+  background-color: white;
+  margin-left:-1em;
+  margin-bottom:2em;
   height:4em;
   width:4em;
   border-radius:25px;
+  border-color:transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25em;
 }
 
 .menu {
@@ -188,25 +199,38 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   
 }
 
-.menu:hover, .menu:active {
+.menu-btn:hover, .menu-btn:active, .menu:hover, .menu:active {
   color:#ff8400;
 }
 
 
+
+
+/* Login CSS */
+
+
+
+
+
 /* MEDIA QUERIES */
 
-@media only screen and(min-width: 320px) {
+@media  screen and(max-width: 320px) {
 
   body,html, .App, #root, .auth-wrapper, .row {
-    width: 15em;
-    height: auto;
-    
+   width: 65vmax;
+   height: 80vmax;
+   font-size: .5em; 
   }
 
-  
+}
 
-  
+@media screen and(max-width: 479px) {
 
+  body,html, .App, #root, .auth-wrapper, .row {
+    width: 80vmax;
+    height: 90vmax;
+    font-size: .75em; 
+   }
 }
 
 
