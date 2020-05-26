@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Row from 'react-bootstrap/Row';
 
 import Player from '../PlayerContainer/Player.js';
@@ -9,8 +9,8 @@ import MenuButton from '../ButtonsContainer/MenuButton.js';
 const selection = ["rock", "paper", "scissors"];
 const compSelection = [ "comprock", "compscissors", "comppaper"];
 
-export default class Game extends Component {
-
+export default class Game extends React.Component {
+con
     state = {
         playerOne: selection[0],
         computer: compSelection[0],
@@ -75,15 +75,15 @@ export default class Game extends Component {
                     <Row className="sel-btns ">
                     <button className="selectionButton "
                     onClick={() => this.selectSelection("rock")}
-                    > rock 
+                    > <i class="fas fa-hand-rock"> </i>
                     </button>
                     <br></br>
                     <button className="selectionButton "
                     onClick={() => this.selectSelection("paper")}
-                    > paper 
+                    > <i class="fas fa-hand-paper"></i>
                     </button>
                     <button className="selectionButton "
-                    onClick={() => this.selectSelection("scissors")}> scissors </button>
+                    onClick={() => this.selectSelection("scissors")}> <i class="fas fa-hand-scissors"></i> </button>
                     </Row>
                     
                        <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : null}</></div> </Row>

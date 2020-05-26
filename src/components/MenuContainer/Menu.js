@@ -8,7 +8,7 @@ export default class Menu extends Component {
 
     render() {
         return (
-            <Container >
+            <Container className="menu-container" >
             <Row> <h3> Menu </h3> </Row>
            <Row> <a href="/" className="btn  btn-block user-direct">Code Differently Pipeline Games</a> </Row>
            <Row className='menu'> <a href="/sign-in" className="btn  btn-block user-direct">Login</a> </Row>

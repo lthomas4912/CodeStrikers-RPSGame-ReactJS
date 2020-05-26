@@ -7,7 +7,6 @@ import {withRouter} from "react-router-dom";
 export default function Menu (){
     const Button = withRouter(({history}) => (
         <button className="menu-btn" type="button" 
-        variant='outline'
         onClick={() => {history.push('/menu')}}>Menu</button>
     ));
     return <Button/>
