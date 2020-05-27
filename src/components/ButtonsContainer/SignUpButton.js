@@ -6,13 +6,12 @@ import './buttons.css';
 
 
 
-function SignUpButton() {
+export default function SignUpButton() {
      const Button = withRouter(({history}) => (
-        <button type="button" className="btn btn-primary signup"
+        <button type="button" className=" signup-but"
         onClick={() => {history.push('/sign-up')}}> Sign-up </button>
 
     ));
     return <Button />
 }
 
-export default SignUpButton;

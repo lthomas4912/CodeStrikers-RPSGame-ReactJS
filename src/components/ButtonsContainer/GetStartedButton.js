@@ -5,7 +5,7 @@ import './buttons.css';
 
 function GetStartedButton(){
     const Button = withRouter(({history}) => (
-        <button className="start" type="button" 
+        <button className="start " type="button" 
         onClick={() => {history.push('/menu')}}>Get Started</button>
     ));
     return <Button/>

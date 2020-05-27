@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import Image from 'react-bootstrap/Image';
 
 
@@ -8,7 +7,7 @@ import PlayButton from '../ButtonsContainer/PlayButton.js';
 
 
 import plain from '../../assets/images/default-profile-image.png';
-import './UserHome.css'; 
+import './userHome.css'; 
 import "bootstrap/dist/css/bootstrap.min.css"; 
 
  export default class UserHome extends Component {
@@ -17,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
           
             <div className="user-home">
                   <MenuButton />
-                    <Image src={plain} height="120px" alt="vector" />
+                    <Image src={plain} height="120px" alt="vector" className='vector' />
                 <br></br>   
                     <button className ="user-direct" to="/my-profile">My profile</button>
                 <br></br>
@@ -34,24 +33,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     <button id="donate-button" to="/donate">Donate</button>
             </div>
 
-=======
-import './userHome.css';
-
-
-class UserHome extends Component {
-    render() {
-        return (
-            <div>
-                <h3 className="sm-title">React User Home Screen</h3>
-                 
-                 
-            </div>
->>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
         );
     }
 }
 
-<<<<<<< HEAD
-=======
-export default UserHome;
->>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8

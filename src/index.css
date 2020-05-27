@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
 
 * {
   box-sizing: border-box; 
   font-size: 1em;
 }
+
+html{
+  display: flex;
+  content: normal;
+  width: 75%;
+  height: 50vmax;
+  
+  }
+
+
+
 body {
   background: #ffffff !important;
-  max-height: 50vh;
   display: flex;
+  justify-content: center;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
   
+ 
 }
+
+
 
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
 }
 
-body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
-  width: auto;
-  height: 100%;
-}
+/* body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
+  width: 50vmax;
+  height: 100vmax;
+} */
 
 
 .auth-wrapper {
@@ -30,16 +47,21 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   flex-direction: column;
   text-align: left;
 
+
 }
 
 .auth-inner {
-  width: auto;
+  display: flex;
+  justify-content: center;
+ 
+  width: 100vmax;
   height: auto;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+  
 }
 
 .auth-wrapper .form-control:focus {
@@ -87,7 +109,13 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 .play-btn {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  justify-content: space-around;
+  height: 4em;
+  width: 4em;
+  margin-top: 1em;
+  padding: .2em;
+  background-color: #818285;
+  border-radius: 25pt;
 }
 
 .who-win{
@@ -95,6 +123,7 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
   justify-content: center;
   margin-top: 20px;
   font-family: Bungee;
+  font-size: 1.25em;
 
 }
 
@@ -104,36 +133,64 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
 
 }
 
+/* Hand Selection */
+
+.fas {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10em;
+  color: #ff8400;
+}
+
+.fa-hand-rock {
+  margin-right: .25em;
+}
+
+.fa-hand-paper {
+  margin-right: .25em;
+}
+
+
+/* Hands CSS */
+
+.hands{
+  display:flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: -1em;
+}
+
+.player-image{
+  width: 50vmax;
+  height: 50vmax;
+  margin-bottom: 1em;
+  
+}
+
+.computer-hand {
+  height: 50vmax;
+  width: 50vmax;
+}
+
 
 /* Login & Sign-up CSS */
 
 
 .row{
-  
-  justify-content: center;
-
-}
-
-
-/* Nav bar Css */
-
-.navi {
-  background-color: #ffffff;
-  border-radius: 10px;
-  position: fixed;
   display:flex;
   justify-content: center;
   
+
 }
+
+
 
 
 /* Buttons CSS */
 
 
 .btn {
-      display: flex;
-      justify-content: center;
-      justify-content: space-evenly;
+     
       cursor: pointer;
       text-align: center;
       text-decoration: none;
@@ -142,73 +199,178 @@ body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
       background-color: #818285;
       border: none;
       border-radius: 25px;
-      margin-top: 15px;
      
-     
+       
 }
 
-.btn:hover{
+.btn:hover, .btn:active {
   background-color: #ff8400;
   border:none;
   outline:none;
 }
 
-.btn:active{
-  border:none;
-  outline:none;
-}
- 
 
-
-
-/* Hands CSS */
-
-.hands{
-  display:flex;
-  justify-content: space-between;
+.spanish-btn {
+  width: 30em;
 }
 
 
-/* Menu & MenuBUtton CSS */
 
-.menu-btn {
-  display:flex;
-  position: relative;
-  justify-content: left;
-  background-color: #ededed;
-  margin-right:20px;
-  height:4em;
-  width:4em;
-  border-radius:25px;
+
+/* Menu Screen & MenuButton CSS */
+
+.fa-home {
+  font-size: 4em;
 }
 
-.menu {
-  display:flex;
+
+.menu-container {
+  display:flexbox;
   justify-content: center;
+  justify-content: space-evenly;
   
 }
 
-.menu:hover, .menu:active {
-  color:#ff8400;
+
+.main-but a {
+  color: white;
 }
+
+.main-but:hover, .main-but:active{
+  color: #ff8400;
+}
+
+ .main-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285 !important;
+  border-radius: 25pt;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ .signup-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285;
+  border-radius: 25pt;
+  color: white;
+}
+
+
+.login-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285;
+  border-radius: 25pt;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERIES */
 
-@media only screen and(min-width: 320px) {
+@media screen and (max-width: 320px) {
 
-  body,html, .App, #root, .auth-wrapper, .row {
-    width: 15em;
-    height: auto;
-    
+  body{
+    width: 50vh;
   }
 
-  
+  .auth-inner, form, .App{
+     font-size: 1em; 
+     height: auto;
+     width: 45vh;
 
-  
+  }
+
+  .play-btn{
+    font-size: 1.75em;
+    height: 3.75em;
+    width: 5em;
+    color: white;
+  }
+
+  .fa-home{
+    margin-bottom: .5em;
+    margin-right: 3em;
+  }
+
+ 
+
+  .player-image, .computer-hand{
+    width: 10em;
+    height: 10em;
+  }
+
+
+
+  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
+    font-size: 5em;
+    margin-bottom:-.1em;
+  }
+
 
 }
 
+
+@media screen and (max-width: 479px) {
+
+  body{
+    width: 100vh;
+  }
+
+  .auth-inner, form, .App{
+     font-size: 1em; 
+     height: auto;
+     width: 68vh;
+
+  }
+
+  .play-btn{
+    font-size: 1.75em;
+    height: 3.75em;
+    width: 5em;
+    color: white;
+  }
+
+  .fa-home{
+    margin-bottom: .5em;
+    margin-right: 3em;
+  }
+
+  .hands{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+
+  .player-image, .computer-hand{
+    width: 10em;
+    height: 10em;
+  }
+
+
+
+  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
+    font-size: 5em;
+    margin-bottom:-.1em;
+  }
+
+
+}
 
 
  

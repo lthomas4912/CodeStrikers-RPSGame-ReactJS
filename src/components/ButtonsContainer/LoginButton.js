@@ -10,7 +10,7 @@ import './buttons.css';
 
 function LoginButton() {
      const Button = withRouter(({history}) => (
-        <button type="button" className="btn signup " 
+        <button type="button" className=" login-but " 
         onClick={() => {history.push('/sign-in')}}> Login </button>
 
     ));

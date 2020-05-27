@@ -1,0 +1,46 @@
+.user-direct {
+    font-family: sans-serif;
+    min-width: 100%;
+    margin-top: 10px;
+    padding: 	10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #818285;
+    color: #fefefe;
+    font-weight: bold;
+  }
+  
+  .user-home  {
+      text-align: center;
+  }
+  
+  p {
+      font-family: sans-serif;
+      margin-top: 30px;
+      min-width: 20%;
+  }
+  #donate-button {
+      background-color: #f5a74f;
+    font-family: sans-serif;
+    min-width: 50%;
+    margin-top: 5px;
+    padding: 	10px;
+    border: none;
+    color: #fefefe;
+    font-weight: bold;
+    box-shadow: 5px 5px black;
+    border-radius: 5px;
+    
+  }
+  
+  #donate-button:hover {
+    background-color: #818285;
+    color: #fefefe;
+  }
+
+  .vector{
+      margin-bottom:1em;
+      border:solid black .5px .5px .5px .5px;
+  }
+
+  

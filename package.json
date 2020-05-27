@@ -8,10 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "acorn": "^7.1.1",
     "axios": "^0.19.2",
-<<<<<<< HEAD
     "boostrap": "^2.0.0",
-=======
->>>>>>> b470267ac7e818c4b3c9151f96d94d42b72f74f8
     "bootstrap": "^4.4.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
