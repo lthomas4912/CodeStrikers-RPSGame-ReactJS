@@ -87,7 +87,7 @@ con
                     </Row>
                     
                        <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : null}</></div> </Row>
-                       <Row > <button type="button" className="play-btn btn" onClick={this.startGame}> Play Hand </button>  </Row>
+                       <Row > <button type="button" className="play-btn " onClick={this.startGame}> Play Hand </button>  </Row>
                    
                 </div>
             </div>

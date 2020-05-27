@@ -10,9 +10,9 @@
 
 html{
   display: flex;
-  justify-content: center;
-  width: 110vmin;
-  height: 100vmin;
+  content: normal;
+  width: 75%;
+  height: 50vmax;
   
   }
 
@@ -24,16 +24,11 @@ body {
   justify-content: center;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
-  width: 150vmin;
-  height: auto;
+  
+ 
 }
 
-.menu-container {
-  display:inline-flexbox;
-  justify-content: center;
-  vertical-align: middle;
-  height: auto;
-}
+
 
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
@@ -55,10 +50,10 @@ h1,h2,h3,h4,h5,h6,label,span {
 
 }
 
-.auth-inner, .App {
+.auth-inner {
   display: flex;
   justify-content: center;
-  width: auto;
+ 
   width: 100vmax;
   height: auto;
   background: #ffffff;
@@ -115,10 +110,12 @@ h1,h2,h3,h4,h5,h6,label,span {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  height: 12em;
-  width: 15em;
-  margin-top: 15px;
+  height: 4em;
+  width: 4em;
+  margin-top: 1em;
   padding: .2em;
+  background-color: #818285;
+  border-radius: 25pt;
 }
 
 .who-win{
@@ -159,8 +156,8 @@ h1,h2,h3,h4,h5,h6,label,span {
 .hands{
   display:flex;
   justify-content: space-between;
-  justify-content: space-around;
   justify-content: center;
+  margin-top: -1em;
 }
 
 .player-image{
@@ -193,8 +190,7 @@ h1,h2,h3,h4,h5,h6,label,span {
 
 
 .btn {
-      display: flex;
-      justify-content: center;
+     
       cursor: pointer;
       text-align: center;
       text-decoration: none;
@@ -203,7 +199,8 @@ h1,h2,h3,h4,h5,h6,label,span {
       background-color: #818285;
       border: none;
       border-radius: 25px;
-      margin-top: 15px;   
+     
+       
 }
 
 .btn:hover, .btn:active {
@@ -216,46 +213,63 @@ h1,h2,h3,h4,h5,h6,label,span {
 .spanish-btn {
   width: 30em;
 }
- 
 
 
 
 
+/* Menu Screen & MenuButton CSS */
 
-
-
-
-
-/* Menu & MenuButton CSS */
-
-.menu-btn {
-  display:flex;
-  position: relative;
-  justify-content: left;
-  background-color: white;
-  margin-left:-1em;
-  margin-bottom:2em;
-  height:4em;
-  width:4em;
-  border-radius:25px;
-  border-color:transparent;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2em;
+.fa-home {
+  font-size: 4em;
 }
 
-.menu {
-  display:flex;
+
+.menu-container {
+  display:flexbox;
   justify-content: center;
+  justify-content: space-evenly;
   
 }
 
-.menu-btn:hover, .menu-btn:active, .menu:hover, .menu:active {
-  color:#ff8400;
+
+.main-but a {
+  color: white;
 }
 
-button.menu-btn {
-  margin:none;
+.main-but:hover, .main-but:active{
+  color: #ff8400;
 }
+
+ .main-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285 !important;
+  border-radius: 25pt;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ .signup-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285;
+  border-radius: 25pt;
+  color: white;
+}
+
+
+.login-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285;
+  border-radius: 25pt;
+  color: white;
+}
+
 
 
 
@@ -268,25 +282,95 @@ button.menu-btn {
 
 /* MEDIA QUERIES */
 
-@media  screen and(max-width: 320px) {
+@media screen and (max-width: 320px) {
 
-  body,html, .App, #root, .auth-inner, .row {
-   width: 65vmax;
-   height: 80vmax;
-   font-size: .5em; 
+  body{
+    width: 50vh;
   }
 
+  .auth-inner, form, .App{
+     font-size: 1em; 
+     height: auto;
+     width: 45vh;
+
+  }
+
+  .play-btn{
+    font-size: 1.75em;
+    height: 3.75em;
+    width: 5em;
+    color: white;
+  }
+
+  .fa-home{
+    margin-bottom: .5em;
+    margin-right: 3em;
+  }
+
+ 
+
+  .player-image, .computer-hand{
+    width: 10em;
+    height: 10em;
+  }
+
+
+
+  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
+    font-size: 5em;
+    margin-bottom:-.1em;
+  }
+
+
 }
 
-/* @media screen and(max-width: 479px) {
 
-  body,html, .App, #root, .auth-wrapper, .row {
-    width: 80vmax;
-    height: 90vmax;
-    font-size: .75em; 
-   }
+@media screen and (max-width: 479px) {
+
+  body{
+    width: 100vh;
+  }
+
+  .auth-inner, form, .App{
+     font-size: 1em; 
+     height: auto;
+     width: 68vh;
+
+  }
+
+  .play-btn{
+    font-size: 1.75em;
+    height: 3.75em;
+    width: 5em;
+    color: white;
+  }
+
+  .fa-home{
+    margin-bottom: .5em;
+    margin-right: 3em;
+  }
+
+  .hands{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+
+  .player-image, .computer-hand{
+    width: 10em;
+    height: 10em;
+  }
+
+
+
+  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
+    font-size: 5em;
+    margin-bottom:-.1em;
+  }
+
+
 }
- */
 
 
  
