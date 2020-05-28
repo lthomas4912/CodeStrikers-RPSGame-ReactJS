@@ -28,10 +28,10 @@ function App() {
      <Container>   
 
         <Router>
-          <div className="App">
+          <div >
          
           <br></br>
-          <div className="auth-wrapper">
+          <div >
               <div className="auth-inner">
               <Row>
                 <Switch>

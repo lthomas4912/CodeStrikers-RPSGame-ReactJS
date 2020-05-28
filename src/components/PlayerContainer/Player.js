@@ -3,7 +3,7 @@ import paper from '../../assets/images/paper.png';
 import scissors from '../../assets/images/scissors.png';
 import rock from '../../assets/images/rock.png';
 
-import './player.css';
+
 
 
 

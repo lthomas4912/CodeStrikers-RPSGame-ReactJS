@@ -65,31 +65,25 @@ con
     render() {
             const { playerOne, computer, winner } = this.state;
         return (
-            <div className='game-page'>
+            <div >
                 <MenuButton />
-                <Row className='hands'>
-                <Player selection={playerOne} />
-                <Computer compSelection={computer} />
-                </Row>
-                <div>
-                    <Row className="sel-btns ">
-                    <button className="selectionButton "
+                <Row className='hands'> <Player selection={playerOne}/> </Row>
+                    <Row>
+                    <button 
                     onClick={() => this.selectSelection("rock")}
                     > <i class="fas fa-hand-rock"> </i>
                     </button>
                     <br></br>
-                    <button className="selectionButton "
+                    <button
                     onClick={() => this.selectSelection("paper")}
                     > <i class="fas fa-hand-paper"></i>
                     </button>
-                    <button className="selectionButton "
+                    <button 
                     onClick={() => this.selectSelection("scissors")}> <i class="fas fa-hand-scissors"></i> </button>
                     </Row>
-                    
+                <Row className='hands'> <Computer compSelection={computer}/> </Row> 
                        <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : null}</></div> </Row>
                        <Row > <button type="button" className="play-btn " onClick={this.startGame}> Play Hand </button>  </Row>
-                   
-                </div>
             </div>
           
         );

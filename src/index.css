@@ -5,26 +5,30 @@
 
 * {
   box-sizing: border-box; 
-  font-size: 1em;
+
 }
 
 html{
   display: flex;
   content: normal;
-  width: 75%;
-  height: 50vmax;
+  width: 75vmax;
+  height: auto;
+  border:black solid;
+  border-radius: 25px;
+  padding:none;
+  margin: none;
   
   }
 
 
 
 body {
-  background: #ffffff !important;
+  background: #ededed ;
   display: flex;
   justify-content: center;
   font-weight: 400;
   font-family: 'Fira Sans', sans-serif;
-  
+  border-radius: 25px;
  
 }
 
@@ -33,6 +37,7 @@ body {
 h1,h2,h3,h4,h5,h6,label,span {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
+  text-align: center;
 }
 
 /* body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
@@ -41,26 +46,17 @@ h1,h2,h3,h4,h5,h6,label,span {
 } */
 
 
-.auth-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-
-
-}
 
 .auth-inner {
   display: flex;
   justify-content: center;
- 
-  width: 100vmax;
-  height: auto;
+  width: 75vmax;
+  height: 100%;
   background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
+  /* padding: 40px 55px 45px 55px; */
   border-radius: 15px;
   transition: all .3s;
+
   
 }
 
@@ -97,7 +93,12 @@ h1,h2,h3,h4,h5,h6,label,span {
 
 /* Game Buttons CSS */
 
-
+ button {
+   border:none;
+   outline:none;
+   color:white;
+   background-color: white;
+ }
 
 .sel-btns{
   display: flex;
@@ -135,11 +136,14 @@ h1,h2,h3,h4,h5,h6,label,span {
 
 /* Hand Selection */
 
-.fas {
+ .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
   display: flex;
   justify-content: space-between;
   font-size: 10em;
   color: #ff8400;
+  border:none;
+  outline:none;
+  background-color: white;
 }
 
 .fa-hand-rock {
@@ -179,8 +183,7 @@ h1,h2,h3,h4,h5,h6,label,span {
 .row{
   display:flex;
   justify-content: center;
-  
-
+ 
 }
 
 
@@ -232,8 +235,12 @@ h1,h2,h3,h4,h5,h6,label,span {
 }
 
 
+
 .main-but a {
-  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-decoration-color: #ff8400;
+  
 }
 
 .main-but:hover, .main-but:active{
@@ -241,14 +248,17 @@ h1,h2,h3,h4,h5,h6,label,span {
 }
 
  .main-but{
+  text-align: center;
   width: 15em;
   height: 5em;
   margin-bottom: 1.25em;
   background-color: #818285 !important;
   border-radius: 25pt;
   color: white;
-  text-align: center;
+  text-decoration: none;
   vertical-align: middle;
+  padding:.8em;
+  
 }
 
  .signup-but{
@@ -258,6 +268,8 @@ h1,h2,h3,h4,h5,h6,label,span {
   background-color: #818285;
   border-radius: 25pt;
   color: white;
+  border:none;
+
 }
 
 
@@ -268,6 +280,14 @@ h1,h2,h3,h4,h5,h6,label,span {
   background-color: #818285;
   border-radius: 25pt;
   color: white;
+  border:none;
+}
+
+.menu-btn {
+  background-color: white;
+  border:none;
+  color:black;
+
 }
 
 
@@ -282,48 +302,6 @@ h1,h2,h3,h4,h5,h6,label,span {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 320px) {
-
-  body{
-    width: 50vh;
-  }
-
-  .auth-inner, form, .App{
-     font-size: 1em; 
-     height: auto;
-     width: 45vh;
-
-  }
-
-  .play-btn{
-    font-size: 1.75em;
-    height: 3.75em;
-    width: 5em;
-    color: white;
-  }
-
-  .fa-home{
-    margin-bottom: .5em;
-    margin-right: 3em;
-  }
-
- 
-
-  .player-image, .computer-hand{
-    width: 10em;
-    height: 10em;
-  }
-
-
-
-  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
-    font-size: 5em;
-    margin-bottom:-.1em;
-  }
-
-
-}
-
 
 @media screen and (max-width: 479px) {
 
@@ -331,7 +309,7 @@ h1,h2,h3,h4,h5,h6,label,span {
     width: 100vh;
   }
 
-  .auth-inner, form, .App{
+  .auth-inner, .form, .App{
      font-size: 1em; 
      height: auto;
      width: 68vh;
@@ -370,6 +348,58 @@ h1,h2,h3,h4,h5,h6,label,span {
   }
 
 
+}
+
+@media screen and (max-width: 320px) {
+
+   html{
+    width: 30vmax;
+    height: 100vh;
+   
+  }
+
+  .auth-inner, form{
+     font-size: 1em; 
+     height: 50%;
+     width: 75%;
+     margin-top: -1.5em;
+  }
+
+
+  .play-btn{
+    font-size: 1.75em;
+    height: 3.75em;
+    width: 5em;
+    color: white;
+  }
+
+  .fa-home{
+    margin-bottom: .5em;
+    margin-right: 3em;
+  }
+
+  .player-image, .computer-hand{
+    width: 17em;
+    height: 12em;
+    
+  }
+
+  .player-image{
+    position: relative;
+    right: -1em;
+  }
+
+  .computer-hand{
+    position: relative;
+    left: 1em;
+    bottom: -2em;
+  }
+
+
+  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
+    font-size: 4.2em;
+    outline:none;
+  }
 }
 
 

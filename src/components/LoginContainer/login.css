@@ -2,11 +2,11 @@
     background-color: #818285;
     border: none;
     border-radius: 25px;
+    min-width: 20%;
     }
 
 .btn{
-  display: flex;
-  justify-content: center;
+  display: inline-block;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -15,7 +15,12 @@
   background-color: #818285;
   border: none;
   border-radius: 25px;
- width: 30%;
+ 
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -24,4 +29,12 @@
 .btn:active {
   background-color: #818285;
   transform: translateY(4px);
+}
+
+
+.pw{
+  margin-left: 60%;
+}
+.link{
+  margin-left: 5%;
 }
