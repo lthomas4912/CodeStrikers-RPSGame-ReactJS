@@ -14,7 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
         return (
           
             <div className="user-home">
-                  <MenuButton />
+                 
                     <Image src={plain} height="120px" alt="vector" className='vector' />
                 <br></br>   
                     <button className ="user-direct" to="/my-profile">My profile</button>

@@ -25,15 +25,12 @@ import SpanishInstructions from './components/InstructionContainer/SpanishInstru
 
 function App() {
   return (
-     <Container>   
+      <Container>   
 
         <Router>
           <div className="App">
-         
-          <br></br>
-          <div className="auth-wrapper">
-              <div className="auth-inner">
-              <Row>
+  
+          <Row>
                 <Switch>
                   <Route exact path='/' component={WelcomeScreen} />
                   <Route path="/sign-in" component={Login} />
@@ -46,8 +43,7 @@ function App() {
                   <Route path="/menu" component={Menu} />
                 </Switch>
               </Row>
-              </div>
-            </div>
+
           </div>
         </Router>
       </Container>

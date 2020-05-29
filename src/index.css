@@ -5,201 +5,75 @@
 
 * {
   box-sizing: border-box; 
-  font-size: 1em;
 }
 
+button,.game-home {
+  border:none;
+  background:none;
+  
+}
+
+
 html{
-  display: flex;
-  content: normal;
-  width: 75%;
-  height: 50vmax;
+  width: auto;
+  height: 100%;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  border: black solid .5px;
+  border-radius: 25px;
+ 
   
   }
 
 
 
-body {
-  background: #ffffff !important;
-  display: flex;
+.App, body, #root, .container, div.App{
+  display:flex;
+  height:100%;
   justify-content: center;
-  font-weight: 400;
-  font-family: 'Fira Sans', sans-serif;
-  
- 
+  align-self: flex-end;
+  border-radius: 25px;
+  margin:0;
+}
+
+.container{
+  margin:none;
+  padding:none;
 }
 
 
 
-h1,h2,h3,h4,h5,h6,label,span {
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
-}
-
-/* body, html, .App, #root, .auth-wrapper, .auth-inner, .form-control {
-  width: 50vmax;
-  height: 100vmax;
-} */
-
-
-.auth-wrapper {
-  display: flex;
+.row {
+  display:flex;
   justify-content: center;
-  flex-direction: column;
-  text-align: left;
-
-
-}
-
-.auth-inner {
-  display: flex;
-  justify-content: center;
- 
-  width: 100vmax;
-  height: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
-  border-radius: 15px;
-  transition: all .3s;
   
 }
 
-.auth-wrapper .form-control:focus {
-  border-color: #167bff;
-  box-shadow: none;
-}
-
-.auth-wrapper h3 {
-  text-align: center;
-  margin: 0;
-  line-height: 1em;
-  padding-bottom: 20px;
-}
-
-.custom-control-label {
-  font-weight: 400;
-}
 
 .forgot-password,
 .forgot-password a {
   text-align: right;
-  /* font-size: 13px; */
   padding-top: 10px;
   color: #7f7d7d;
   margin: 0;
 }
 
 .forgot-password a {
-  color: #167bff;
-}
-
-
-
-/* Game Buttons CSS */
-
-
-
-.sel-btns{
-  display: flex;
-  align-content: space-between;
-  margin-top: 20px;
-  margin-right:10px;
-}
-
-.play-btn {
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  height: 4em;
-  width: 4em;
-  margin-top: 1em;
-  padding: .2em;
-  background-color: #818285;
-  border-radius: 25pt;
-}
-
-.who-win{
-  display:flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-family: Bungee;
-  font-size: 1.25em;
-
-}
-
-.selectionButton{
-  display:flex;
-  margin-right:12px;
-
-}
-
-/* Hand Selection */
-
-.fas {
-  display: flex;
-  justify-content: space-between;
-  font-size: 10em;
   color: #ff8400;
-}
-
-.fa-hand-rock {
-  margin-right: .25em;
-}
-
-.fa-hand-paper {
-  margin-right: .25em;
-}
-
-
-/* Hands CSS */
-
-.hands{
-  display:flex;
-  justify-content: space-between;
-  justify-content: center;
-  margin-top: -1em;
-}
-
-.player-image{
-  width: 50vmax;
-  height: 50vmax;
-  margin-bottom: 1em;
-  
-}
-
-.computer-hand {
-  height: 50vmax;
-  width: 50vmax;
 }
 
 
 /* Login & Sign-up CSS */
 
 
-.row{
-  display:flex;
-  justify-content: center;
-}
-
 .form-control {
   background-color: #818285;
   border: none;
   border-radius: 25px;
-  min-width: 20%;
+  
   }
 
-.btn{
-display: inline-block;
-cursor: pointer;
-text-align: center;
-text-decoration: none;
-outline: none;
-color: white;
-background-color: #818285;
-border: none;
-border-radius: 25px;
-
-}
 
 .logo {
 display: flex;
@@ -251,6 +125,7 @@ p {
     margin-top: 30px;
     min-width: 20%;
 }
+
 #donate-button {
     background-color: #f5a74f;
   font-family: sans-serif;
@@ -277,6 +152,8 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+  height: 20em;
+  width: 20em;
 
 }
 
@@ -296,6 +173,7 @@ p {
   justify-content: center;
   margin-bottom: 5%;
   color: #ff8400;
+
 }
 
 
@@ -314,9 +192,7 @@ p {
       color: white;
       background-color: #818285;
       border: none;
-      border-radius: 25px;
-     
-       
+      border-radius: 25px;       
 }
 
 .btn:hover, .btn:active {
@@ -330,6 +206,82 @@ p {
   width: 30em;
 }
 
+.start{
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #ff8400;
+  border: none;
+  border-radius: 25px;
+  margin-left: 1em;
+  padding:.5em;
+  }
+
+  
+  .start:hover{
+      background-color: #FF8400;
+  }
+  
+  .start:active{
+      background-color: #818285;
+      transform: translateY(4px)
+  }
+  
+
+  .signup{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #818285;
+    border: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    width:16em;
+   
+  }
+  .signup:hover{
+      background-color: #FF8400;
+  }
+  
+  .signup:active{
+      background-color: #818285;
+      transform: translateY(4px)
+  }
+  
+  .Pw{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #818285;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+  }
+  
+  .Pw:hover{
+      background-color: #FF8400;
+  }
+  
+  .Pw:active{
+      background-color: #818285;
+      transform: translateY(4px)
+  }
+
+
 
 
 
@@ -337,14 +289,21 @@ p {
 
 .fa-home {
   font-size: 4em;
+  position:relative;
+  right: 5em;
 }
+
 
 
 .menu-container {
   display:flexbox;
   justify-content: center;
   justify-content: space-evenly;
-  
+  margin-top: 5em;
+}
+
+.menu-title{
+  margin-bottom: 2em;
 }
 
 
@@ -354,19 +313,21 @@ p {
 
 .main-but:hover, .main-but:active{
   color: #ff8400;
+  text-decoration: none;
 }
 
  .main-but{
   width: 15em;
   height: 5em;
   margin-bottom: 1.25em;
-  background-color: #818285 !important;
+  background-color: #818285;
   border-radius: 25pt;
   color: white;
   text-align: center;
-  vertical-align: middle;
-}
-
+  padding: 1em;
+  
+ }
+  
  .signup-but{
   width: 15em;
   height: 5em;
@@ -374,17 +335,124 @@ p {
   background-color: #818285;
   border-radius: 25pt;
   color: white;
+  
 }
 
 
 .login-but{
   width: 15em;
   height: 5em;
-  margin-bottom: 1.25em;
   background-color: #818285;
   border-radius: 25pt;
   color: white;
+  
 }
+
+/* Game & GameBoard CSS */
+
+.fa-robot, .fa-user {
+  font-size: .75em;
+
+}
+
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid black;
+    width:80%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 50px;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    position: relative;
+  background: transparent;
+  box-shadow:#535359 0 20px 50px rgba(red, green, blue, alpha);
+}
+
+
+.score-board::before{   
+transition: 0.5;
+
+}
+
+
+.score-board:hover:before{
+left: -50%;
+}
+
+
+.badge {
+background: #cc5500;
+color: whitesmoke;
+font-size: .75em;
+font-family: sans-serif;
+}
+
+
+#user-label{
+position: absolute;
+color:white;
+top: 25px;
+left: -25px;
+}
+
+#computer-label{
+position: absolute;
+color:white;
+top: 25px;
+right: -23px;
+}
+
+.selectionButton{
+
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 30px;
+  text-align: center;
+  height: 100px;
+  background: transparent;
+
+}
+
+
+.play-btn{
+
+border-radius: 25px;
+  background:#ff8400;
+  position: relative;
+  bottom:1em;
+  top:1em;
+  text-align: center;
+  padding: 1em;
+
+}
+
+/* Hands CSS */
+
+.hands{
+  display:flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin-top: -1em;
+}
+
+.player-image{
+  width: 20vmax;
+  height: 20vmax;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  
+}
+
+.computer-hand {
+  height: 20vmax;
+  width: 20vmax;
+}
+
+
+
 
 
 
@@ -398,96 +466,30 @@ p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 320px){
 
   body{
-    width: 50vh;
+    background-color: white;
   }
 
-  .auth-inner, form, .App{
-     font-size: 1em; 
-     height: auto;
-     width: 45vh;
-
+  .main{
+    height: 20em;
+    width: 19.8em;
+    border-radius: 25px;
+   
   }
 
-  .play-btn{
-    font-size: 1.75em;
-    height: 3.75em;
-    width: 5em;
-    color: white;
+  .start{
+    width:90%;
+    text-align: center;
   }
 
-  .fa-home{
-    margin-bottom: .5em;
-    margin-right: 3em;
+  .strt-butn{
+    position: relative;
+    left:2em;
   }
-
- 
-
-  .player-image, .computer-hand{
-    width: 10em;
-    height: 10em;
-  }
-
-
-
-  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
-    font-size: 5em;
-    margin-bottom:-.1em;
-  }
-
-
 }
-
-
-@media screen and (max-width: 479px) {
-
-  body{
-    width: 100vh;
-  }
-
-  .auth-inner, form, .App{
-     font-size: 1em; 
-     height: auto;
-     width: 68vh;
-
-  }
-
-  .play-btn{
-    font-size: 1.75em;
-    height: 3.75em;
-    width: 5em;
-    color: white;
-  }
-
-  .fa-home{
-    margin-bottom: .5em;
-    margin-right: 3em;
-  }
-
-  .hands{
-    display: flex;
-    justify-content: space-between;
-  }
-
- 
-
-  .player-image, .computer-hand{
-    width: 10em;
-    height: 10em;
-  }
-
-
-
-  .fa-hand-rock, .fa-hand-paper, .fa-hand-scissors {
-    font-size: 5em;
-    margin-bottom:-.1em;
-  }
-
-
-}
-
 
  
 
