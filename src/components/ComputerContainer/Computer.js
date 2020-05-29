@@ -3,7 +3,7 @@ import comppaper from '../../assets/images/comppaper.png';
 import compscissors from '../../assets/images/compscissors.png';
 import comprock from '../../assets/images/comprock.png';
 
-import './computer.css';
+
 
 
 

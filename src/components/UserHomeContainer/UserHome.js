@@ -7,7 +7,6 @@ import PlayButton from '../ButtonsContainer/PlayButton.js';
 
 
 import plain from '../../assets/images/default-profile-image.png';
-import './userHome.css'; 
 import "bootstrap/dist/css/bootstrap.min.css"; 
 
  export default class UserHome extends Component {

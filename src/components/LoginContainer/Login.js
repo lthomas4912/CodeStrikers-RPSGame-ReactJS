@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
 
-import './login.css';
+
 import logo from '../../assets/images/cdlogo.png';
 
 export default class Login extends Component {

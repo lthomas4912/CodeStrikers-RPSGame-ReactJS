@@ -179,9 +179,125 @@ h1,h2,h3,h4,h5,h6,label,span {
 .row{
   display:flex;
   justify-content: center;
-  
+}
+
+.form-control {
+  background-color: #818285;
+  border: none;
+  border-radius: 25px;
+  min-width: 20%;
+  }
+
+.btn{
+display: inline-block;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: white;
+background-color: #818285;
+border: none;
+border-radius: 25px;
 
 }
+
+.logo {
+display: flex;
+justify-content: center;
+}
+
+
+.btn:hover{background-color: #FF8400; }
+
+.btn:active {
+background-color: #818285;
+transform: translateY(4px);
+}
+
+.pw{
+  margin-left: 60%;
+}
+.link{
+  margin-left: 5%;
+}
+
+.forgot-title{
+  display:flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+/* UserHome CSS */
+
+.user-direct {
+  font-family: sans-serif;
+  min-width: 100%;
+  margin-top: 10px;
+  padding: 	10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #818285;
+  color: #fefefe;
+  font-weight: bold;
+}
+
+.user-home  {
+    text-align: center;
+}
+
+p {
+    font-family: sans-serif;
+    margin-top: 30px;
+    min-width: 20%;
+}
+#donate-button {
+    background-color: #f5a74f;
+  font-family: sans-serif;
+  min-width: 50%;
+  margin-top: 5px;
+  padding: 	10px;
+  border: none;
+  color: #fefefe;
+  font-weight: bold;
+  box-shadow: 5px 5px black;
+  border-radius: 5px;
+  
+}
+
+#donate-button:hover {
+  background-color: #818285;
+  color: #fefefe;
+}
+
+
+/* Welcome Screen CSS */
+
+.main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+
+}
+
+.wel-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.main-pic{
+  display: flex;
+  justify-content: center;
+}
+
+.wel{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  color: #ff8400;
+}
+
 
 
 

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import "./ForgotPassword.css"
 
 import ForgotPasswordButton from '../ButtonsContainer/ForgotPasswordButton.js';
 import logo from '../../assets/images/cdlogo.png';

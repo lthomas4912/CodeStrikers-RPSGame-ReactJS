@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './welcome.css';
+
 
 
 import Container from 'react-bootstrap/Container';
@@ -11,7 +11,7 @@ import GetStartedButton from '../ButtonsContainer/GetStartedButton.js';
 
 
 import rps from '../../assets/images/rps-logo.png';
-import './welcome.css';
+
 
 export default class WelcomeScreen extends Component {
     render() {
