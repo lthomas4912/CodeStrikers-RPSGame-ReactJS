@@ -307,8 +307,12 @@ p {
 }
 
 
+
 .main-but a {
-  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-decoration-color: #ff8400;
+  
 }
 
 .main-but:hover, .main-but:active{
@@ -317,6 +321,7 @@ p {
 }
 
  .main-but{
+  text-align: center;
   width: 15em;
   height: 5em;
   margin-bottom: 1.25em;
@@ -454,16 +459,6 @@ border-radius: 25px;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 
 
@@ -492,9 +487,6 @@ border-radius: 25px;
 }
 
  
-
-
-
 
 
 
