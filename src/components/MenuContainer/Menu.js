@@ -13,7 +13,7 @@ export default class Menu extends Component {
         return (
           
                 <div className="menu-container" >
-                    <Row> <h3> Menu </h3> </Row>
+                    <Row> <h1 className="menu-title"> Menu </h1> </Row>
                     <Row> <a href="/" className=' main-but' >Code Differently Pipeline Games</a> </Row>
                     <Row className='login-butn'> <LoginButton  /> </Row>
                     <Row className='signup-butn'> <SignUpButton  /> </Row>    

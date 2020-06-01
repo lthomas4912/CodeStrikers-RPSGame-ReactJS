@@ -50,6 +50,14 @@ html{
   
 }
 
+.form-cntrl {
+  background-color: #818285;
+  border: none;
+  border-radius: 25px;
+  }
+
+  .form-cntrl 
+
 
 .forgot-password,
 .forgot-password a {
@@ -347,6 +355,7 @@ p {
 .login-but{
   width: 15em;
   height: 5em;
+  margin-bottom: 1.25em;
   background-color: #818285;
   border-radius: 25pt;
   color: white;
