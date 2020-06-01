@@ -18,12 +18,12 @@ export default class Login extends Component {
               
 
                 <div className="form-group">
-                    <label>Username</label>
+                   
                     <input type="text" className="form-cntrl" placeholder="Enter username" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                  
                     <input type="password" className="form-cntrl" placeholder="Enter password" />
                 </div>
 
@@ -34,7 +34,7 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <UserHomeButton />
+                <UserHomeButton className="login-home-butn" />
                 <p className="pw">Forgot 
                         <Link className="link"to="/forgotpw"> Password</Link>
                         ?

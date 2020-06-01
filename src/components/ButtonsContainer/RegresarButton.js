@@ -7,7 +7,7 @@ export default function RegresarButton(){
         <button
         type = "button"
         onClick = {() => {history.push('/game')}}
-        className="btn user-direct ">
+        className="regresar user-direct ">
         Regresar al juego
         </button>
     ));

@@ -4,6 +4,7 @@ import Image from 'react-bootstrap/Image';
 
 import MenuButton from '../ButtonsContainer/MenuButton.js';
 import PlayButton from '../ButtonsContainer/PlayButton.js';
+import EnglishInstructionsButton from '../ButtonsContainer/EnglishInstructionsButton.js';
 
 
 import plain from '../../assets/images/default-profile-image.png';
@@ -23,8 +24,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
                <br></br>     
                     <button className ="user-direct" to="/friend-requests">Friend Requests</button>
                 <br></br>    
-                    <a href="/EnglishInstructions" className="btn btn-primary btn-block user-direct">Instructions</a>                
-                    <div className="play-butn"><PlayButton /></div>
+                    <EnglishInstructionsButton/>              
+                    <div className="user-direct user-play " ><PlayButton /></div>
                     <p>
                        Donate $1 or more to fund our Youth Technology
                        Learning Program based in Wilmington, DE.</p> 

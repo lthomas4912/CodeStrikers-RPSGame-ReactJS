@@ -12,7 +12,7 @@ import scissors from '../../assets/images/scissors.png';
 
 
 const selection = ["rock", "paper", "scissors"];
-const compSelection = [ "comprock", "compscissors", "comppaper"];
+const compSelection = [ "questionmark", "comprock", "compscissors", "comppaper"];
 
 
 export default class Game extends Component {
@@ -65,7 +65,8 @@ export default class Game extends Component {
     selectSelection = selection => {
         this.setState({
         playerOne: selection,
-        winner: ""
+        winner: "",
+        computer: ""
         })
     };
 

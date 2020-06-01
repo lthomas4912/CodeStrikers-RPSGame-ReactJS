@@ -5,7 +5,6 @@ import PlayButton from '../ButtonsContainer/PlayButton.js';
 import InstruccionesButton from '../ButtonsContainer/InstruccionesButton.js';
 
 
-import '../InstructionContainer/English.css';
 
 
 
@@ -13,17 +12,13 @@ export default class EnglishInstruction extends Component{
     render(){
         return(
             <form className = "English-page">
-                <h1 className = "title">Instruction</h1>
+                <h1 className = "title">Instructions</h1>
                 <p className = "instruction">
-                    The game Rock, Paper, Scissors, is a game to help 
-                    people socialize, especially during these times due to
-                    the Coronavirus. Whether you want to play with a 
-                    friend using your device or perhaps a person who is 
-                    thousands of miles away. To play Rock, Paper, 
+                    To play Rock, Paper, 
                     Scissors, there are a few simple steps that you must 
                     practice. 
                 </p>
-                <p className = "instruction">
+                <p className = "instructionss">
                     The rules are very simple and probably you 
                     remember them from your childhood: <br></br>
                     If you choose Rock, you will win against Scissors but 
@@ -37,10 +32,9 @@ export default class EnglishInstruction extends Component{
                     click “Play again” button after a game is finished. 
 
                 </p>
-                <Row>
-                <InstruccionesButton />
-                <PlayButton />
-                </Row>
+                <Row className=" user-direct Spanish-instruct"> <InstruccionesButton /> </Row>
+                <Row className=" user-direct English-instruct"><PlayButton /></Row>
+                
             </form>
         )
     }
