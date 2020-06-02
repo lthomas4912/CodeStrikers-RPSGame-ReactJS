@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
 
 
 import MenuButton from '../ButtonsContainer/MenuButton.js';
@@ -13,7 +14,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
  export default class UserHome extends Component {
     render() {
         return (
-          
+          <div >
+              <Row> <a href="/menu" className="menu-home-butn"><i class="fas fa-home "></i></a> </Row>
+        
             <div className="user-home">
                  
                     <Image src={plain} height="120px" alt="vector" className='vector' />
@@ -32,6 +35,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
                     <button id="donate-button" to="/donate">Donate</button>
             </div>
+
+        </div>
 
         );
     }

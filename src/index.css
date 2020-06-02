@@ -144,9 +144,26 @@ transform: translateY(4px);
 
 /* UserHome CSS */
 
+.menu-home-butn{
+  padding:0;
+  margin:0;
+  margin-top: .5em;
+  position: relative;
+  right:5.5em;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size:1.5em;
+}
+
+.menu-home-butn:hover, .menu-home-butn:active{
+  color: #ff8400;
+  text-decoration: none;
+}
+
+
+
 .vector{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     border-radius: 300px;
     box-shadow: 5px 5px black;
 }
@@ -166,20 +183,20 @@ transform: translateY(4px);
 
 .user-home  {
     text-align: center;
-    margin-top:1em;
+    margin-top: -.7em;
+   
 }
 
 p {
     font-family: sans-serif;
-    margin-top: 30px;
+    margin-top: 20px;
     min-width: 20%;
 }
 
 #donate-button {
-    background-color: #f5a74f;
+  background-color: #f5a74f;
   font-family: sans-serif;
   min-width: 50%;
-  margin-bottom:1em;
   padding: 	10px;
   border: none;
   color: #fefefe;
@@ -204,7 +221,7 @@ p {
   font-weight: bolder;
 }
 
-.play-now:hover, .play-now:active{
+ .play-now:active{
   background-color: #ff8400;
 }
 
@@ -387,23 +404,24 @@ p {
 
 /* Menu Screen & MenuButton CSS */
 
+
+
 .fa-home {
   font-size: 4em;
   position:relative;
   right: 5em;
 }
 
-
-
 .menu-container {
   display:flexbox;
   justify-content: center;
   justify-content: space-evenly;
   margin-top: 5em;
+  font-weight:bold;
 }
 
 .menu-title{
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 
@@ -440,7 +458,7 @@ p {
   background-color: #818285;
   border-radius: 25pt;
   color: white;
-  
+  font-weight:bold;
 }
 
 
@@ -451,7 +469,18 @@ p {
   background-color: #818285;
   border-radius: 25pt;
   color: white;
-  
+  font-weight:bold;
+}
+
+.use-home, .use-home:hover, .use-home:active{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #818285;
+  border-radius: 25pt;
+  color: white;
+  padding-top: 1.3em;
+  text-decoration:none;
 }
 
 /* Game & GameBoard CSS */
@@ -459,6 +488,11 @@ p {
 .fa-robot, .fa-user {
   font-size: .75em;
 
+}
+
+.fa-home{
+  font-size: 1.5em;
+  left:.2em;
 }
 
 
@@ -473,7 +507,7 @@ p {
     font-family: sans-serif;
     position: relative;
   background: transparent;
-  box-shadow:#535359 0 20px 50px rgba(red, green, blue, alpha);
+  
 }
 
 
@@ -515,7 +549,8 @@ right: -23px;
   border-radius: 50%;
   padding: 10px;
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 30px 0 ;
+  margin-bottom:-.5em;
   text-align: center;
   height: 100px;
   background: transparent;
@@ -528,7 +563,7 @@ right: -23px;
 border-radius: 25px;
   background:#ff8400;
   position: relative;
-  bottom:1em;
+  bottom:.5em;
   top:1em;
   text-align: center;
   padding: 1em;
