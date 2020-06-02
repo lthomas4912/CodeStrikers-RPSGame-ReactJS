@@ -570,6 +570,11 @@ border-radius: 25px;
 
 }
 
+.who-win{
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+
 /* Hands CSS */
 
 .hands{

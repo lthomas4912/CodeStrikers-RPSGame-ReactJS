@@ -90,7 +90,7 @@ export default class Game extends Component {
                     <Computer compSelection={computer} />
                 </Row>
                 
-                 <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : "Who will win??"}</></div> </Row>
+                 <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : "May The Best Win!!!"}</></div> </Row>
                 <Row className="choices ">
                     <roundbutton className="selectionButton"
                         onClick={() => this.selectSelection("rock")}>  
