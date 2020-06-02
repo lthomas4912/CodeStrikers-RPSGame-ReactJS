@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
     render() {
         return (
           <div >
-              <Row> <a href="/menu" className="menu-home-butn"><i class="fas fa-home "></i></a> </Row>
+              <Row> <a href="/menu" className="menu-home-butn">Home</a> </Row>
         
             <div className="user-home">
                  

@@ -144,22 +144,22 @@ transform: translateY(4px);
 
 /* UserHome CSS */
 
-.menu-home-butn{
+
+.menu-home-butn {
   padding:0;
-  margin:0;
   margin-top: .5em;
+  margin-right: 8.5em;
   position: relative;
-  right:5.5em;
   font-family: Helvetica, sans-serif;
   color: black;
   font-size:1.5em;
+  font-weight: 500;
 }
 
 .menu-home-butn:hover, .menu-home-butn:active{
-  color: #ff8400;
   text-decoration: none;
+  color: #ff8400;
 }
-
 
 
 .vector{
@@ -406,10 +406,15 @@ p {
 
 
 
-.fa-home {
-  font-size: 4em;
-  position:relative;
-  right: 5em;
+.menu-home-butn {
+  padding:0;
+  margin-top: .5em;
+  right: 6em;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size:1.5em;
+  font-weight: 500;
 }
 
 .menu-container {
@@ -485,14 +490,30 @@ p {
 
 /* Game & GameBoard CSS */
 
+.menu-game-butn {
+  padding:0;
+  margin-top: .5em;
+  position: relative;
+  right: 4em;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size:1.5em;
+  font-weight: 500;
+}
+
+.menu-game-butn:hover, .menu-game-butn:active{
+  color: #ff8400;
+  text-decoration: none;
+}
+
 .fa-robot, .fa-user {
   font-size: .75em;
 
 }
 
-.fa-home{
+.menu-home-butn{
   font-size: 1.5em;
-  left:.2em;
+  left: .1px;
 }
 
 
