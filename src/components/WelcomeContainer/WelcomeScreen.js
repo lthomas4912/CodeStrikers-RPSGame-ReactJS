@@ -21,6 +21,7 @@ export default class WelcomeScreen extends Component {
                  <Row className='wel'> <h4> With</h4> </Row> {' '}
                  <Row className='wel-title'><h3> Code Differently Pipeline Games  </h3> </Row>
                  <Row className='start strt-butn'> <GetStartedButton /> </Row>
+                 <Row className="copyright"><i class="far fa-copyright"> <span className="copyright-code">Code Differently</span></i></Row>
             </div>
         );
     }

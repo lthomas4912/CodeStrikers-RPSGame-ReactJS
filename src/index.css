@@ -429,7 +429,9 @@ p {
   margin-bottom: 1em;
 }
 
-
+.main{
+ margin-top:1.5em;
+}
 
 .main-but a {
   font-size: 1em;
@@ -486,6 +488,19 @@ p {
   color: white;
   padding-top: 1.3em;
   text-decoration:none;
+}
+
+.copyright-code{
+  margin-top: 3em;
+  font-family: Arial, 'Helvetica';
+}
+
+.copyright{
+  margin-top: 3em;
+}
+
+.fa-copyright{
+  font-size: 1em;
 }
 
 /* Game & GameBoard CSS */
@@ -663,9 +678,7 @@ border-radius: 25px;
    margin-left: .03em;
  }
 
- .user-dire.user-play{
 
- }
 
 
 
