@@ -82,12 +82,12 @@ html{
 
 
 .main-start{
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: -6em;
-  margin-bottom:5em;
+  margin-top: -4em;
+  margin-bottom:3em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -96,7 +96,7 @@ html{
   background-color: #ff8400;
   border: none;
   border-radius: 25px;
-  padding: 1em; 
+  padding: 20px 20px; 
 }
 
 .main-wel{
@@ -105,6 +105,10 @@ html{
 
 .main-to{
   margin-top: 2em;
+}
+
+.main-copyright{
+  margin-top:1em;
 }
 
 .logo{
@@ -437,7 +441,7 @@ transform: translateY(4px);
   font-family: sans-serif;
   min-width: 100%;
   margin-top: 10px;
-  margin-bottom:1em;
+  margin-bottom:.67em;
   padding: 	10px;
   border: none;
   border-radius: 30px;
@@ -488,6 +492,16 @@ p {
 
  .play-now:active{
   background-color: #ff8400;
+}
+
+.bottom-nav {
+  margin-top:.5em;
+  border-radius:25px;
+  background-color: #ff8400;
+}
+
+.MuiBottomNavigationAction{
+  color:#ff8400;
 }
 
 
@@ -556,6 +570,15 @@ p {
   margin-bottom: 5%;
   color: #ff8400;
 
+}
+
+.main-para{
+  margin-top:1em;
+}
+
+.main-donate{
+ 
+  margin-bottom:-8em;
 }
 
 
@@ -773,12 +796,14 @@ p {
 .menu-game-butn {
   padding:0;
   margin-top: .5em;
+  margin-bottom: -.5em;
   position: relative;
   right: 4em;
   font-family: Helvetica, sans-serif;
   color: black;
   font-size:1.5em;
   font-weight: 500;
+
 }
 
 .menu-game-butn:hover, .menu-game-butn:active{
@@ -851,7 +876,7 @@ right: -23px;
   padding: 10px;
   display: inline-block;
   margin: 0 30px 0 ;
-  margin-bottom:-.5em;
+  margin-bottom:-1em;
   text-align: center;
   height: 100px;
   background: transparent;
@@ -874,6 +899,10 @@ border-radius: 25px;
 .who-win{
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
+}
+
+.game-nav{
+  margin-top:1.5em;
 }
 
 /* Hands CSS */

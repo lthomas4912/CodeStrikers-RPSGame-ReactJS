@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 
 import Player from '../PlayerContainer/Player.js';
 import Computer from '../ComputerContainer/Computer.js';
+import BottomNavBar from '../NavbarContainer/BottomNavBar.js';
 
 
 
@@ -110,6 +111,8 @@ export default class Game extends Component {
                 </Row>
             
                 <Row > <button type="button" className="play-btn " onClick={this.startGame}> Play Hand </button>  </Row>
+
+                <div className="game-nav"> <BottomNavBar /> </div>
             </div>
             
           
