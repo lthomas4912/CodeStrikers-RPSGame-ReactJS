@@ -3,7 +3,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 
-import MenuButton from '../ButtonsContainer/MenuButton.js';
+
 import PlayButton from '../ButtonsContainer/PlayButton.js';
 import EnglishInstructionsButton from '../ButtonsContainer/EnglishInstructionsButton.js';
 

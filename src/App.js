@@ -10,7 +10,7 @@ import './App.css';
 import Login from "./components/LoginContainer/Login.js";
 import SignUp from "./components/SignUpContainer/SignUp.js";
 import UserHome from './components/UserHomeContainer/UserHome.js';
-
+import MainWelcome from './components/MainWelcomeContainer/MainWelcome.js';
 import Game from  './components/GameContainer/Game.js';
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import Menu from './components/MenuContainer/Menu.js';
@@ -32,7 +32,9 @@ function App() {
   
           <Row>
                 <Switch>
-                  <Route exact path='/' component={WelcomeScreen} />
+                  <Route exact path="/" component={MainWelcome} />
+                  <Route path='/welcome' component={WelcomeScreen} />
+                  <Route path="/menu" component={Menu} />
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
                   <Route path="/userhome" component={UserHome} />
@@ -40,7 +42,7 @@ function App() {
                   <Route path="/forgotpw" component={ForgotPassword} />
                   <Route path="/englishinstructions" component={EnglishInstructions} />
                   <Route path="/SpanishInstructions" component={SpanishInstructions} />
-                  <Route path="/menu" component={Menu} />
+                  
                 </Switch>
               </Row>
 
