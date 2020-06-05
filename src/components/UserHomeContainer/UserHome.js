@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 
 import PlayButton from '../ButtonsContainer/PlayButton.js';
 import EnglishInstructionsButton from '../ButtonsContainer/EnglishInstructionsButton.js';
-import BottomNavBar from '../NavbarContainer/BottomNavBar.js';
+import SecondBottomNavBar from '../NavbarContainer/SecondBottomNavBar.js';
 import PaypalButton from '../ButtonsContainer/PaypalButton.js';
 
 
@@ -25,9 +25,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     <Image src={plain} height="90px" alt="vector" className='vector' />
                 <br></br>   
                     <button className ="user-direct" to="/my-profile">My profile</button>
-                <br></br>
-                    <button className ="user-direct" to="/game-stats">Game Stats</button>
-               <br></br>     
+                <br></br>   
                     <button className ="user-direct" to="/friend-requests">Friend Requests</button>
                 <br></br>    
                     <EnglishInstructionsButton/>              
@@ -37,7 +35,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
                        Learning Program based in Wilmington, DE.</p> 
                     <div> <PaypalButton /> </div>
             </div>
-            <BottomNavBar />
+            {/* <Row className="bot-navbar"><SecondBottomNavBar /></Row> */}
         </div>
 
         );

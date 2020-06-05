@@ -18,7 +18,7 @@ import ForgotPassword from "./components/ForgotPasswordContainer/ForgotPassword.
 import EnglishInstructions from './components/InstructionContainer/EnglishInstructions.js';
 import SpanishInstructions from './components/InstructionContainer/SpanishInstructions.js';
 
-
+import SecondBottomNavBar from './components/NavbarContainer/SecondBottomNavBar.js';
 
 
 
@@ -29,7 +29,6 @@ function App() {
 
         <Router>
           <div className="App">
-  
           <Row>
                 <Switch>
                   <Route exact path="/" component={MainWelcome} />
@@ -45,9 +44,10 @@ function App() {
                   
                 </Switch>
               </Row>
-
+            
           </div>
         </Router>
+            <Row className="new-nav"><SecondBottomNavBar /></Row>
       </Container>
   );
 }

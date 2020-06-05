@@ -78,7 +78,7 @@ export default class Game extends Component {
 
              <div>
                
-               <Row> <a href="/menu" className="menu-game-butn">Home</a> </Row>
+               {/* <Row> <a href="/menu" className="menu-game-butn">Home</a> </Row> */}
                 <div class="score-board">
                     <div id = "user-label" class = "badge" ><i class="fas fa-user"></i></div>
                     <div id = "computer-label" class = "badge" > <i class="fas fa-robot"></i> </div>
@@ -112,7 +112,7 @@ export default class Game extends Component {
             
                 <Row > <button type="button" className="play-btn " onClick={this.startGame}> Play Hand </button>  </Row>
 
-                <div className="game-nav"> <BottomNavBar /> </div>
+               
             </div>
             
           

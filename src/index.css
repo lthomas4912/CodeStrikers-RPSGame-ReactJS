@@ -77,6 +77,14 @@ html{
 }
 
 
+.new-nav{
+  padding:none;
+  margin:none;
+  margin-bottom:5em;
+  width:3em;
+  font-family: 'Bungee Outline', cursive;
+
+}
 
 /* Main Welcome CSS */
 
@@ -494,10 +502,12 @@ p {
   background-color: #ff8400;
 }
 
-.bottom-nav {
-  margin-top:.5em;
-  border-radius:25px;
-  background-color: #ff8400;
+.bot-navbar {
+  margin-bottom:2em;
+  left: 0.5em;
+  right:0.5em;
+  border-radius:30px;
+  background-color: #fefefe;
 }
 
 .MuiBottomNavigationAction{
@@ -939,7 +949,7 @@ border-radius: 25px;
 
   .main{
     height: 20em;
-    width: 19.8em;
+    width: 18em;
     border-radius: 25px;
    
   }
@@ -973,12 +983,7 @@ border-radius: 25px;
    margin-left: .03em;
  }
 
- .logo {
 
-  stroke-dasharray: 8em;
-  stroke-dashoffset: 8em;
-
- }
 
 
 
