@@ -10,9 +10,12 @@ export default class SecondNavBar extends Component{
     render(){
         return(
             <div>
-                <Container>
+                <Container className='new-nav'>
                     <Navbar fixed="bottom"  className="bot-navbar">
-                        <Navbar.Brand href="/welcome" >Code Differently</Navbar.Brand>
+                        <Navbar.Brand href="/welcome" >
+                         <p className='nav-code'>Code</p>
+                         <p className='nav-diff'>Differently</p>
+                         </Navbar.Brand>
                         <Nav>
                             <Nav.Link href="/menu"><i class="fas fa-home"></i></Nav.Link>
                             <Nav.Link href="/menu"><i class="fas fa-home"></i></Nav.Link>

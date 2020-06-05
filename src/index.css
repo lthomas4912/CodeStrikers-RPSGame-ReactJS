@@ -78,12 +78,30 @@ html{
 
 
 .new-nav{
-  padding:none;
-  margin:none;
-  margin-bottom:5em;
-  width:3em;
-  font-family: 'Bungee Outline', cursive;
+  margin-bottom:10em;
+}
 
+.nav-code{
+  padding:none;
+  margin-bottom:0;
+  font-family: 'Bungee Outline', cursive;
+  font-size:.75em;
+  color:#FF8400;
+  font-weight: 600;
+
+}
+
+.nav-diff {
+  margin-bottom:0;
+  font-family: 'Bungee Outline', cursive;
+  font-size:.75em;
+  color:#FF8400;
+  font-weight: 600;
+}
+
+.bot-nav{
+  padding:0;
+  margin:0;
 }
 
 /* Main Welcome CSS */
@@ -393,8 +411,7 @@ to{ fill: orange;
 
 
 .logo {
-display: flex;
-justify-content: center;
+
 }
 
 
@@ -415,7 +432,11 @@ transform: translateY(4px);
 .forgot-title{
   display:flex;
   justify-content: center;
-  margin-bottom: 20px;
+}
+
+.page-login{
+margin-top:10em;
+
 }
 
 
@@ -502,17 +523,9 @@ p {
   background-color: #ff8400;
 }
 
-.bot-navbar {
-  margin-bottom:2em;
-  left: 0.5em;
-  right:0.5em;
-  border-radius:30px;
-  background-color: #fefefe;
-}
 
-.MuiBottomNavigationAction{
-  color:#ff8400;
-}
+
+
 
 
 /* English Instructions CSS */
@@ -965,11 +978,11 @@ border-radius: 25px;
     margin-top: 1em;
   }
 
-  .page-login .form-cntrl {
+  /* .page-login .form-cntrl {
     width: 97%;
     margin-left: .3em;
 
-  }
+  } */
 
   .user-direct.Spanish-instruct, .user-direct.English-instruct{
       width:98%;

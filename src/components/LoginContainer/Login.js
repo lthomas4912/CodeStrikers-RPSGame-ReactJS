@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Container';
 
 import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
@@ -10,14 +11,10 @@ import logo from '../../assets/images/cdlogo.png';
 export default class Login extends Component {
     render() {
         return (
-            <>
-            
-          
-            <form className="page-login">
-               <Row className="logo">  <img  src={logo} height="200px" alt="pipeline"/> </Row>
-              
+            <Col className="page-login">
 
-                <div className="form-group">
+            <form >
+            <div className="form-group">
                    
                     <input type="text" className="form-cntrl" placeholder="Enter username" />
                 </div>
@@ -41,7 +38,7 @@ export default class Login extends Component {
                     </p>
             </form>
 
-              </>
+              </Col>
         );
     }
 }
