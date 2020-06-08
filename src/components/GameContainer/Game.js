@@ -10,28 +10,89 @@ import BottomNavBar from '../NavbarContainer/BottomNavBar.js';
 import rock from '../../assets/images/rock.png';
 import paper from '../../assets/images/paper.png';
 import scissors from '../../assets/images/scissors.png';
+import questionmark from '../../assets/images/question-mark.png';
+
+
 
 
 const selection = ["rock", "paper", "scissors"];
-const compSelection = [ "questionmark", "comprock", "compscissors", "comppaper"];
+const compSelection = [ "comprock", "compscissors", "comppaper"];
 
 
 export default class Game extends Component {
     
-    
+
+
+
 
     state = {
-        playerOne: selection[0],
-        computer: compSelection[0],
-        winner: ""
+        playerOne: "",
+        computerPlayer: "" ,
+        winner: "",
+        playerWins: 0,
+        computerWins: 0
     };
 
-    startGame = () => {
-        let count = 0;
-        let gameInterval = setInterval(() => {
+    
+
+
+    score( playerPick, computerPick){
+
+        if ( (playerPick ==="paper" &&  computerPick === "comppaper") ||
+            (playerPick === "rock" && computerPick === "comprock") ||
+            (playerPick === "scissors" && computerPick === "compscissors")){
+                    return 0;
+        } else if (
+            (playerPick === "rock" && computerPick === "compscissors") ||
+            (playerPick === "paper" && computerPick === "comprock") ||
+            (playerPick === "scissors" && computerPick === "comppaper")) {
+                return 1;
+        } else {
+                return -1;
+        }
+    };
+
+    selectWinner = () => {
+    const { playerOne, computerPlayer, winner, playerWins, computerWins } = this.state;
+
+
+     const compSelection = [ "comprock", "compscissors", "comppaper"];
+     const computer =  compSelection[Math.floor(Math.random() * compSelection.length)];
+     
+
+     const result = this.score(this.state.playerOne, computer);
+
+            if ( (result === -1) && ((playerOne ==="paper" &&  computerPlayer === "comppaper") ||
+                (playerOne === "rock" && computerPlayer === "comprock") ||
+                (playerOne === "scissors" && computerPlayer === "compscissors"))){
+                    this.setState({
+                        computerPick: computer,
+                        winner: "Issa tie..."
+                    })
+                
+            } else if ( (result === 1) && 
+                ((playerOne === "rock" && computerPlayer === "compscissors") ||
+                (playerOne === "paper" && computerPlayer === "comprock") ||
+                (playerOne === "scissors" && computerPlayer === "comppaper"))
+            ) {
+                    this.setState({
+                    playerOne: this.playerOne,
+                    playerWins: this.state.playerWins + 1,
+                    winner: "You are a WINNA!"
+                    })
+            } else {
+                    this.setState({
+                    computerPlayer: computer,
+                    computerWins: this.computerWins + 1,
+                    winner: " Whomps. You Lose" 
+                    })
+            }
+
+            let count = 0;
+            let gameInterval = setInterval(() => {
             count++;
             this.setState({
-            computer: compSelection[Math.floor(Math.random() * compSelection.length)],
+            
             winner: ""
         });
 
@@ -44,35 +105,37 @@ export default class Game extends Component {
              }, 100);
     };
 
-    selectWinner = () => {
-    const { playerOne, computer } = this.state;
 
-    if ( (playerOne ==="paper" &&  computer === "comppaper") ||
-        (playerOne === "rock" && computer === "comprock") ||
-        (playerOne === "scissors" && computer === "compscissors")){
-        return "Issa tie...";
-    } else if (
-        (playerOne === "rock" && computer === "compscissors") ||
-        (playerOne === "paper" && computer === "comprock") ||
-        (playerOne === "scissors" && computer === "comppaper")
-    ) {
-        return "You are a Winna!";
-    } else {
-        return "Whomps, computer wins ";
-    }
-    };
-    
 
-    selectSelection = selection => {
+   
+
+
+    paperButton = () => {
         this.setState({
-        playerOne: selection,
-        winner: "",
-        computer: ""
+            playerOne: "paper"
         })
-    };
+    }
+
+    rockButton = () => {
+        this.setState({
+            playerOne: "rock"
+        })
+    }
+
+    scissorsButton = () => {
+        this.setState({
+            playerOne: "scissors"
+        })
+    }
+
+
 
     render() {
-            const { playerOne, computer, winner } = this.state;
+
+    
+        const { playerOne, computerPlayer, playerWins, computerWins} = this.state;
+        const theEnd = this.state.winner;
+
         return (
             
 
@@ -82,35 +145,39 @@ export default class Game extends Component {
                 <div class="score-board">
                     <div id = "user-label" class = "badge" ><i class="fas fa-user"></i></div>
                     <div id = "computer-label" class = "badge" > <i class="fas fa-robot"></i> </div>
-                    <span id = "user-score">0 :<span id = "computer-score" > 0</span></span>
+                    <span id = "user-score"> {playerWins} :<span id = "computer-score" > {computerWins}</span></span>
                 </div> 
             
                 
                 <Row className='hands'>
                     <Player selection={playerOne} />
-                    <Computer compSelection={computer} />
+                    <Computer compSelection={computerPlayer} />
                 </Row>
                 
-                 <Row className="who-win"> <div className="winner"><>{winner ? this.selectWinner() : "May The Best Win!!!"}</></div> </Row>
+                 <Row className="who-win"> <div className="winner"><>{theEnd ? this.result : "May The Best Win!!!"}</></div> </Row>
                 <Row className="choices ">
-                    <roundbutton className="selectionButton"
-                        onClick={() => this.selectSelection("rock")}>  
+                    <button className="selectionButton" type="button"
+                    value="rock"
+                        onClick={this.rockButton}>  
                         <img  src={rock}height="75px" center alt="pipeline"/>
-                    </roundbutton>
+                    </button>
                     
-                    <roundbutton className="selectionButton "
-                    onClick={() => this.selectSelection("paper")}
+                    <button className="selectionButton " type="button"
+                    value="paper"
+                    onClick={this.paperButton}
                     > <img  src={paper} height="80px" center alt="pipeline"/>
-                    </roundbutton>
+                    </button>
                     
 
-                    <roundbutton className="selectionButton "
-                    onClick={() => this.selectSelection("scissors")}>
+                    <button className="selectionButton " 
+                    type="button"
+                    value="scissors"
+                    onClick={this.scissorsButton}>
                      <img  src={scissors} height="80px" center alt="pipeline"/>
-                     </roundbutton>
+                     </button>
                 </Row>
             
-                <Row > <button type="button" className="play-btn " onClick={this.startGame}> Play Hand </button>  </Row>
+                <Row > <button type="button" className="play-btn " onClick={this.selectWinner}> Play Hand </button>  </Row>
 
                
             </div>

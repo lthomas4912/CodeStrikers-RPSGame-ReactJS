@@ -2,7 +2,6 @@ import React from 'react';
 import comppaper from '../../assets/images/comppaper.png';
 import compscissors from '../../assets/images/compscissors.png';
 import comprock from '../../assets/images/comprock.png';
-import questionmark from '../../assets/images/question-mark.png';
 
 
 
@@ -14,8 +13,7 @@ import questionmark from '../../assets/images/question-mark.png';
                     <img
                         className="computer-hand"
                         src={
-                            compSelection === "comprock" ? comprock : compSelection === "compscissors" ? compscissors : 
-                            compSelection === "comppaper" ? comppaper : questionmark
+                            compSelection === "comprock" ? comprock : compSelection === "compscissors" ? compscissors : comppaper 
                         }
                         alt="Rock paper scissors"
                         />
