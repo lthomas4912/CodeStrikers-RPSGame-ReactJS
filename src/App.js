@@ -48,6 +48,9 @@ function App() {
           </div>
         </Router>
             <Row className="new-nav"><SecondBottomNavBar /></Row>
+            <br></br>
+            <br></br>
+            <br></br>
       </Container>
   );
 }

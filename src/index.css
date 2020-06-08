@@ -78,7 +78,7 @@ html{
 
 
 .new-nav{
-  margin-bottom:10em;
+
 }
 
 .nav-code{
@@ -102,6 +102,7 @@ html{
 .bot-nav{
   padding:0;
   margin:0;
+  margin-bottom:1em;
 }
 
 /* Main Welcome CSS */
@@ -899,6 +900,7 @@ right: -23px;
   padding: 10px;
   display: inline-block;
   margin: 0 30px 0 ;
+  margin-top: -1em;
   margin-bottom:-1em;
   text-align: center;
   height: 100px;
@@ -938,16 +940,16 @@ border-radius: 25px;
 }
 
 .player-image{
-  width: 20vmax;
-  height: 20vmax;
+  width: 15vmax;
+  height: 15vmax;
   margin-bottom: 1em;
   margin-right: 1em;
   
 }
 
 .computer-hand {
-  height: 20vmax;
-  width: 20vmax;
+  height: 15vmax;
+  width: 15vmax;
 }
 
 
