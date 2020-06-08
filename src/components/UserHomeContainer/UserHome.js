@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
+
 
 
 
 import PlayButton from '../ButtonsContainer/PlayButton.js';
 import EnglishInstructionsButton from '../ButtonsContainer/EnglishInstructionsButton.js';
-import SecondBottomNavBar from '../NavbarContainer/SecondBottomNavBar.js';
 import PaypalButton from '../ButtonsContainer/PaypalButton.js';
 
 
@@ -18,7 +17,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
     render() {
         return (
           <div >
-              <Row> <a href="/menu" className="menu-home-butn">Home</a> </Row>
+              {/* <Row> <a href="/menu" className="menu-home-butn">Home</a> </Row> */}
         
             <div className="user-home">
                  

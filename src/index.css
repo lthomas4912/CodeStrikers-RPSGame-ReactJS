@@ -51,7 +51,7 @@ html{
 }
 
 .form-cntrl {
-  background-color: #818285;
+  background-color: #243e90;
   border: none;
   border-radius: 25px;
   
@@ -73,37 +73,26 @@ html{
 }
 
 .forgot-password a {
-  color: #ff8400;
+  color: #f47d26;
 }
 
 
 .new-nav{
-
+  display:flex;
+  justify-content: center;
 }
 
-.nav-code{
-  padding:none;
-  margin-bottom:0;
-  font-family: 'Bungee Outline', cursive;
-  font-size:.75em;
-  color:#FF8400;
-  font-weight: 600;
 
+.navi{
+  display: flex;
+  justify-content: center;
+  margin-left: 3.6em;
+  font-size: 1.5em;
+  color: #243e90;
+  border-bottom: 1px solid black;
 }
 
-.nav-diff {
-  margin-bottom:0;
-  font-family: 'Bungee Outline', cursive;
-  font-size:.75em;
-  color:#FF8400;
-  font-weight: 600;
-}
 
-.bot-nav{
-  padding:0;
-  margin:0;
-  margin-bottom:1em;
-}
 
 /* Main Welcome CSS */
 
@@ -120,7 +109,7 @@ html{
   text-decoration: none;
   outline: none;
   color: white;
-  background-color: #ff8400;
+  background-color: #f47d26;
   border: none;
   border-radius: 25px;
   padding: 20px 20px; 
@@ -370,6 +359,140 @@ to{ fill: orange;
 }
 }
 
+/* Welcome Screen CSS */
+
+.main{
+  display: flex;
+  justify-content: center;
+  height:100px;
+  width:100px;
+
+}
+
+.wel-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-family:  Helvetica, sans-serif;
+  color: #f47d26;
+  font-weight: 600;
+}
+
+.main-pic{
+  display: flex;
+  justify-content: center;
+  height:150px;
+}
+
+.wel{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  color: #f47d26;
+
+}
+
+/* Menu Screen & MenuButton CSS */
+
+
+
+.menu-home-butn {
+  padding:0;
+  margin-top: .5em;
+  right: 6em;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  font-size:1.5em;
+  font-weight: 500;
+}
+
+.menu-container {
+  display:flexbox;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  font-weight:bold;
+}
+
+.menu-title{
+  margin-bottom: 1em;
+  color: #f47d26;
+}
+
+.main{
+ margin-top:3em;
+}
+
+.main-but a {
+  font-size: 1em;
+  text-decoration: none;
+  text-decoration-color: #f47d26;
+  
+}
+
+.main-but:hover, .main-but:active{
+  color: #f47d26;
+  text-decoration: none;
+}
+
+ .main-but{
+  text-align: center;
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #243e90;
+  border-radius: 25pt;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  
+ }
+  
+ .signup-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #243e90;
+  border-radius: 25pt;
+  color: white;
+  font-weight:bold;
+}
+
+
+.login-but{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #243e90;
+  border-radius: 25pt;
+  color: white;
+  font-weight:bold;
+}
+
+.use-home, .use-home:hover, .use-home:active{
+  width: 15em;
+  height: 5em;
+  margin-bottom: 1.25em;
+  background-color: #243e90;
+  border-radius: 25pt;
+  color: white;
+  padding-top: 1.3em;
+  text-decoration:none;
+}
+
+.copyright-code{
+  margin-top: 3em;
+  font-family: Arial, 'Helvetica';
+}
+
+.copyright{
+  margin-top: 10em;
+}
+
+.fa-copyright{
+  font-size: 1em;
+}
 
 
 
@@ -408,18 +531,11 @@ to{ fill: orange;
 }
 
 
-  
 
-
-.logo {
-
-}
-
-
-.btn:hover{background-color: #FF8400; }
+.btn:hover{background-color: #f47d26; }
 
 .btn:active {
-background-color: #818285;
+background-color: #243e90;
 transform: translateY(4px);
 }
 
@@ -457,11 +573,12 @@ margin-top:10em;
 
 .menu-home-butn:hover, .menu-home-butn:active{
   text-decoration: none;
-  color: #ff8400;
+  color: #f47d26;
 }
 
 
 .vector{
+    margin-top:5em;
     margin-bottom: 8px;
     border-radius: 300px;
     box-shadow: 5px 5px black;
@@ -475,7 +592,7 @@ margin-top:10em;
   padding: 	10px;
   border: none;
   border-radius: 30px;
-  background-color: #818285;
+  background-color: #243e90;
   color: #fefefe;
   font-weight: bold;
 }
@@ -506,7 +623,7 @@ p {
 }
 
 #donate-button:hover {
-  background-color: #818285;
+  background-color: #243e90;
   color: #fefefe;
 }
 
@@ -514,14 +631,14 @@ p {
   min-width: 100%;
   border: none;
   border-radius: 30px;
-  background-color: #818285;
+  background-color: #243e90;
   font-family: sans-serif;
   color: white;
   font-weight: bolder;
 }
 
  .play-now:active{
-  background-color: #ff8400;
+  background-color: #f47d26;
 }
 
 
@@ -532,7 +649,7 @@ p {
 /* English Instructions CSS */
 
 .English-page{
-  margin-top:2em;
+  margin-top:4em;
 }
 
 .English-instruct {
@@ -540,7 +657,7 @@ p {
   margin-top: 10px;
   border: none;
   border-radius: 30px;
-  background-color: #818285;
+  background-color: #243e90;
   font-family: sans-serif;
   color: white;
   font-weight: bold;
@@ -560,50 +677,13 @@ p {
 }
 
 .Spanish-instruct{
-  padding:0;
-  
+  padding:0; 
 }
 
-
-
-/* Welcome Screen CSS */
-
-.main{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  height: 20em;
-  width: 20em;
-
+.Spanish-page{
+  margin-top:4em;
 }
 
-.wel-title{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-}
-
-.main-pic{
-  display: flex;
-  justify-content: center;
-}
-
-.wel{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  color: #ff8400;
-
-}
-
-.main-para{
-  margin-top:1em;
-}
-
-.main-donate{
- 
-  margin-bottom:-8em;
-}
 
 
 
@@ -619,13 +699,13 @@ p {
       text-decoration: none;
       outline: none;
       color: white;
-      background-color: #818285;
+      background-color: #243e90;
       border: none;
       border-radius: 25px;       
 }
 
 .btn:hover, .btn:active {
-  background-color: #ff8400;
+  background-color: #f47d26;
   border:none;
   outline:none;
 }
@@ -645,7 +725,7 @@ p {
   text-decoration: none;
   outline: none;
   color: white;
-  background-color: #ff8400;
+  background-color: #f47d26;
   border: none;
   border-radius: 25px;
   margin-left: 1em;
@@ -654,11 +734,11 @@ p {
 
   
   .start:hover{
-      background-color: #FF8400;
+      background-color: #f47d26;
   }
   
   .start:active{
-      background-color: #818285;
+      background-color: #243e90;
       transform: translateY(4px)
   }
   
@@ -670,7 +750,7 @@ p {
     text-decoration: none;
     outline: none;
     color: white;
-    background-color: #818285;
+    background-color: #243e90;
     border: none;
     border-radius: 25px;
     margin-top: 15px;
@@ -678,11 +758,11 @@ p {
    
   }
   .signup:hover{
-      background-color: #FF8400;
+      background-color: #f47d26;
   }
   
   .signup:active{
-      background-color: #818285;
+      background-color: #243e90;
       transform: translateY(4px)
   }
   
@@ -693,7 +773,7 @@ p {
     text-decoration: none;
     outline: none;
     color: white;
-    background-color: #818285;
+    background-color: #243e90;
     border: none;
     border-radius: 25px;
     width: 100%;
@@ -702,11 +782,11 @@ p {
   }
   
   .Pw:hover{
-      background-color: #FF8400;
+      background-color: #f47d26;
   }
   
   .Pw:active{
-      background-color: #818285;
+      background-color: #243e90;
       transform: translateY(4px)
   }
 
@@ -714,124 +794,14 @@ p {
 
 
 
-/* Menu Screen & MenuButton CSS */
 
-
-
-.menu-home-butn {
-  padding:0;
-  margin-top: .5em;
-  right: 6em;
-  position: relative;
-  font-family: Helvetica, sans-serif;
-  color: black;
-  font-size:1.5em;
-  font-weight: 500;
-}
-
-.menu-container {
-  display:flexbox;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-top: 5em;
-  font-weight:bold;
-}
-
-.menu-title{
-  margin-bottom: 1em;
-}
-
-.main{
- margin-top:3em;
-}
-
-.main-but a {
-  font-size: 1em;
-  text-decoration: none;
-  text-decoration-color: #ff8400;
-  
-}
-
-.main-but:hover, .main-but:active{
-  color: #ff8400;
-  text-decoration: none;
-}
-
- .main-but{
-  text-align: center;
-  width: 15em;
-  height: 5em;
-  margin-bottom: 1.25em;
-  background-color: #818285;
-  border-radius: 25pt;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  
- }
-  
- .signup-but{
-  width: 15em;
-  height: 5em;
-  margin-bottom: 1.25em;
-  background-color: #818285;
-  border-radius: 25pt;
-  color: white;
-  font-weight:bold;
-}
-
-
-.login-but{
-  width: 15em;
-  height: 5em;
-  margin-bottom: 1.25em;
-  background-color: #818285;
-  border-radius: 25pt;
-  color: white;
-  font-weight:bold;
-}
-
-.use-home, .use-home:hover, .use-home:active{
-  width: 15em;
-  height: 5em;
-  margin-bottom: 1.25em;
-  background-color: #818285;
-  border-radius: 25pt;
-  color: white;
-  padding-top: 1.3em;
-  text-decoration:none;
-}
-
-.copyright-code{
-  margin-top: 3em;
-  font-family: Arial, 'Helvetica';
-}
-
-.copyright{
-  margin-top: 10em;
-}
-
-.fa-copyright{
-  font-size: 1em;
-}
 
 /* Game & GameBoard CSS */
 
-.menu-game-butn {
-  padding:0;
-  margin-top: .5em;
-  margin-bottom: -.5em;
-  position: relative;
-  right: 4em;
-  font-family: Helvetica, sans-serif;
-  color: black;
-  font-size:1.5em;
-  font-weight: 500;
 
-}
 
 .menu-game-butn:hover, .menu-game-butn:active{
-  color: #ff8400;
+  color: #f47d26;
   text-decoration: none;
 }
 
@@ -848,12 +818,14 @@ p {
 
 .score-board {
     margin: 20px auto;
+    margin-top:1.5em;
     border: 3px solid black;
     width:80%;
     border-radius: 4px;
     text-align: center;
     font-size: 50px;
     padding: 15px 20px;
+    color: #243e90;
     font-family: sans-serif;
     position: relative;
   background: transparent;
@@ -873,7 +845,7 @@ left: -50%;
 
 
 .badge {
-background: #cc5500;
+background: #f47d26;
 color: whitesmoke;
 font-size: .75em;
 font-family: sans-serif;
@@ -912,7 +884,8 @@ right: -23px;
 .play-btn{
 
 border-radius: 25px;
-  background:#ff8400;
+  background:#f47d26;
+  color:#243e90;
   position: relative;
   bottom:.5em;
   top:1em;
@@ -922,8 +895,8 @@ border-radius: 25px;
 }
 
 .who-win{
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-family: 'Bungee', Helvetica, sans-serif;
+  font-size: 1.4em;
 }
 
 .game-nav{
@@ -963,8 +936,8 @@ border-radius: 25px;
 
 
   .main{
-    height: 20em;
-    width: 18em;
+    height: 15em;
+    width: 15em;
     border-radius: 25px;
    
   }

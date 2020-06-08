@@ -1,21 +1,28 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Container';
 
+import Row from 'react-bootstrap/Row';
+import Image from 'react-bootstrap/Image';
+
+
+import GetStartedButton from '../ButtonsContainer/GetStartedButton.js';
+import PaypalButton from '../ButtonsContainer/PaypalButton.js';
 import UserHomeButton from '../ButtonsContainer/UserHomeButton.js';
 
 
-import logo from '../../assets/images/cdlogo.png';
 
-export default class Login extends Component {
+import rps from '../../assets/images/rps-logo.png';
+
+
+export default class WelcomeScreen extends Component {
     render() {
         return (
-            <Col className="page-login">
-
-            <form >
+            <div>
+                 <Image src={rps} className="main"  alt="main logo" /> 
+                 <Row><h4 className='wel-title'>Log In </h4></Row>
+                 <form >
             <div className="form-group">
-                   
+                
                     <input type="text" className="form-cntrl" placeholder="Enter username" />
                 </div>
 
@@ -38,7 +45,8 @@ export default class Login extends Component {
                     </p>
             </form>
 
-              </Col>
+                 <Row className="copyright"><i class="far fa-copyright"> <span className="copyright-code">Code Differently</span></i></Row>
+            </div>
         );
     }
 }

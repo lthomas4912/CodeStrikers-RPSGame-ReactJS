@@ -12,7 +12,6 @@ import SignUp from "./components/SignUpContainer/SignUp.js";
 import UserHome from './components/UserHomeContainer/UserHome.js';
 import MainWelcome from './components/MainWelcomeContainer/MainWelcome.js';
 import Game from  './components/GameContainer/Game.js';
-import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import Menu from './components/MenuContainer/Menu.js';
 import ForgotPassword from "./components/ForgotPasswordContainer/ForgotPassword.js";
 import EnglishInstructions from './components/InstructionContainer/EnglishInstructions.js';
@@ -32,7 +31,6 @@ function App() {
           <Row>
                 <Switch>
                   <Route exact path="/" component={MainWelcome} />
-                  <Route path='/welcome' component={WelcomeScreen} />
                   <Route path="/menu" component={Menu} />
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
@@ -48,9 +46,7 @@ function App() {
           </div>
         </Router>
             <Row className="new-nav"><SecondBottomNavBar /></Row>
-            <br></br>
-            <br></br>
-            <br></br>
+            <hr className='line'></hr>
       </Container>
   );
 }

@@ -8,7 +8,7 @@ import RegresarButton from '../ButtonsContainer/RegresarButton.js';
 export default class SpanishInstruction extends Component{
     render(){
         return(
-            <form className = "">
+            <form className = "Spanish-page">
                 <h1>Instrucciones</h1>
                 <p>
                     Para jugar el juego de 
