@@ -7,8 +7,8 @@ export default function EnglishInstructionsButton(){
         <button
         
         onClick = {() => {history.push('/englishinstructions')}}
-        className=" English-instruct user-direct ">
-        Instructions
+        className="userhome-but">
+        Instruction
         </button>
     ));
 

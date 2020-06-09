@@ -102,7 +102,7 @@ html{
   font-weight: bold;
   display: flex;
   justify-content: center;
-  margin-top: -4em;
+  margin-top: -2em;
   margin-bottom:3em;
   cursor: pointer;
   text-align: center;
@@ -116,7 +116,7 @@ html{
 }
 
 .main-wel{
-  margin-top: 3em;
+  margin-top: 4em;
 }
 
 .main-to{
@@ -127,237 +127,210 @@ html{
   margin-top:1em;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+
 .logo{
-  animation: fill 1s ease forwards 3.5s;
-  display: flex;
-  justify-content: center;
-  margin-top: -10em;
+    animation: fill 0.5s ease forwards 3s;
+    display: flex;
+    justify-content: center;
+    
 }
 
 
 
 
 .logo path:nth-child(1){
-stroke-dasharray: 0px;
+  stroke-dasharray:500px;
+   stroke-dashoffset: 500px;
+   animation: line-anim 2s ease forwards 1.2s;
+   
+   
 }
 
 .logo path:nth-child(2){
- stroke-dasharray: 200px;
- stroke-dashoffset: 200px;
- animation: line-anim 2s ease forwards 0.6s;
+   stroke-dasharray: 500px;
+   stroke-dashoffset: 500px;
+   animation: line-anim 2s ease forwards 1.8s;
 }
 
 
 
 .logo path:nth-child(3){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
- animation:line-anim 2s ease forwards 0.9s;
+  stroke-dasharray:500px;
+   stroke-dashoffset: 500px;
+   animation:line-anim 2s ease forwards 2.6s;
 }
 
 
 .logo path:nth-child(4){
-  stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 1.2s;
+    stroke-dasharray:500px;
+   stroke-dashoffset: 500px;
+    animation:line-anim 2s ease forwards 3.4s;
 }
 
 .logo path:nth-child(5){
-  stroke-dasharray:200px;
-   stroke-dashoffset: 200px;
-    animation:line-anim 2s ease forwards 1.5s;
+    stroke-dasharray:200px;
+     stroke-dashoffset: 200px;
+      animation:line-anim 2s ease forwards 3.8s;
 }
 
 .logo path:nth-child(6){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 1.8s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.8s;
 }
 
 
 .logo path:nth-child(7){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 2.1s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4s;
 }
 
 
 .logo path:nth-child(8){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 2.4s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.2s;
 }
 
 
 .logo path:nth-child(9){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 2.7s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.4s;
 }
 
 .logo path:nth-child(10){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 3.0s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.6s;
 
 }
 
 
 
 .logo path:nth-child(11){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 3.3s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.8s;
 
 }
 
 
 .logo path:nth-child(12){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 3.6s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 5.0s;
 
 }
 
 
 .logo path:nth-child(13){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 3.9s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 5.2s;
 
 }
 
 
 .logo path:nth-child(14){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 4.2s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.4s;
 
 }
 
 
 .logo path:nth-child(15){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 4.5s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 4.4s;
 
 }
 
 
 .logo path:nth-child(16){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 4.7s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.8s;
 
 }
 
 
 .logo path:nth-child(17){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 5.0s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.8s;
 
 }
 
 
 .logo path:nth-child(18){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 5.3s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.6s;
 
 }
 
 
 .logo path:nth-child(19){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 5.6s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.6s;
 
 }
 
 
 .logo path:nth-child(20){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 5.9s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 1.6s;
 
 }
 
 
 .logo path:nth-child(21){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 6.2s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.6s;
 
 }
 
 
 .logo path:nth-child(22){
-stroke-dasharray:200px;
- stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 6.5s;
+  stroke-dasharray:200px;
+   stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.6s;
 
 
 }
 
 
 .logo path:nth-child(23){
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 6.8s;
-}
-
-
-.logo path:nth-child(24){
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 7.1s;
-}
-
-
-.logo path:nth-child(25){
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 7.4s;
-}
-
-
-.logo path:nth-child(26){
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 7.7s;
+  stroke-dasharray:200px;
+  stroke-dashoffset: 200px;
+    animation:line-anim 2s ease forwards 3.6s;
 }
 
 
 
-.logo path:nth-child(27){
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 8.0s;
-}
-
-
-
-.logo path:nth-child(28)
-{
-stroke-dasharray:200px;
-stroke-dashoffset: 200px;
-  animation:line-anim 2s ease forwards 8.3s;
-
-}
-
-@keyframes line-anim{
-   to{
+ 
+ @keyframes line-anim{
+     to{
 stroke-dashoffset:0;
-   }
-}
-@keyframes fill{
-   from {
-       fill:none;
-   }
-to{ fill: orange;
-}
-}
+     }
+ }
 
 /* Welcome Screen CSS */
 
@@ -463,7 +436,8 @@ to{ fill: orange;
 .login-but{
   width: 15em;
   height: 5em;
-  margin-bottom: 1.25em;
+  margin-top:-6em;
+
   background-color: #243e90;
   border-radius: 25pt;
   color: white;
@@ -560,21 +534,8 @@ margin-top:10em;
 /* UserHome CSS */
 
 
-.menu-home-butn {
-  padding:0;
-  margin-top: .5em;
-  margin-right: 8.5em;
-  position: relative;
-  font-family: Helvetica, sans-serif;
-  color: black;
-  font-size:1.5em;
-  font-weight: 500;
-}
 
-.menu-home-butn:hover, .menu-home-butn:active{
-  text-decoration: none;
-  color: #f47d26;
-}
+
 
 
 .vector{
@@ -584,24 +545,35 @@ margin-top:10em;
     box-shadow: 5px 5px black;
 }
 
-.user-direct {
+.userhome-but{
   font-family: sans-serif;
-  min-width: 100%;
-  margin-top: 10px;
-  margin-bottom:.67em;
-  padding: 	10px;
+  width: 100px;
+  height: 100px;
+  padding: 	10px 10px 10px 10px;
+  margin-top: 1em;
+  margin-bottom:1em;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #243e90;
   color: #fefefe;
   font-weight: bold;
+  text-align: center;
 }
 
-.user-home  {
-    text-align: center;
-    margin-top: -.7em;
-   
+.pro{
+ margin-right: 2em;
+
 }
+
+.English{
+text-align: center;
+
+}
+
+.play{
+  margin-left: 2em;
+}
+
 
 p {
     font-family: sans-serif;

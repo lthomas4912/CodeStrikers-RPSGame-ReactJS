@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
 
 
 
@@ -21,14 +22,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
         
             <div className="user-home">
                  
-                    <Image src={plain} height="90px" alt="vector" className='vector' />
+                    <Image src={plain} height="150px" alt="vector" className='vector' />
                 <br></br>   
-                    <button className ="user-direct" to="/my-profile">My profile</button>
-                <br></br>   
-                    <button className ="user-direct" to="/friend-requests">Friend Requests</button>
-                <br></br>    
-                    <EnglishInstructionsButton/>              
-                    <div className="user-direct user-play " ><PlayButton /></div>
+                   <Row> <button className ="userhome-but pro" to="/my-profile">My profile</button>
+               
+                    <button className ="userhome-but request" to="/friend-requests">Friend Requests</button> </Row>
+             
+                   <Row> <EnglishInstructionsButton className="userhome-but English"/>              
+                    <PlayButton /> </Row>
                     <p>
                        Donate $1 or more to fund our Youth Technology
                        Learning Program based in Wilmington, DE.</p> 

@@ -3,7 +3,6 @@ import Row from 'react-bootstrap/Row';
 
 import Player from '../PlayerContainer/Player.js';
 import Computer from '../ComputerContainer/Computer.js';
-import MenuButton from '../ButtonsContainer/MenuButton.js';
 import rock from '../../assets/images/rock.png';
 import paper from '../../assets/images/paper.png';
 import scissors from '../../assets/images/scissors.png';
@@ -11,7 +10,7 @@ import questionMark from '../../assets/images/question-mark.png';
 
 
 const selection = ["rock", "paper", "scissors"];
-const compSelection = [ {questionMark}, "comprock", "compscissors", "comppaper"];
+const compSelection = [ "questionMark", "comprock", "compscissors", "comppaper"];
 
 
 
@@ -20,7 +19,7 @@ export default class Game extends Component {
 
     state = {
         playerOne: "" ,
-        computer: "",
+        computer: compSelection[0],
         winner: "",
         playerWin: 0,
         computerWin: 0,

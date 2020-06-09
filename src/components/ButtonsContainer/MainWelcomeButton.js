@@ -6,7 +6,7 @@ import React from "react";
 export default function MainWelcomeButton(){
     const Button = withRouter(({history}) => (
         <button className="main-start " type="button" 
-        onClick={() => {history.push('/welcome')}}>Welcome</button>
+        onClick={() => {history.push('/sign-in')}}>Welcome</button>
     ));
     return <Button/>
 }
