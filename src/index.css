@@ -334,51 +334,10 @@ stroke-dashoffset:0;
 
 /* Welcome Screen CSS */
 
-.main{
-  display: flex;
-  justify-content: center;
-  height:100px;
-  width:100px;
 
-}
-
-.wel-title{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  font-family:  Helvetica, sans-serif;
-  color: #f47d26;
-  font-weight: 600;
-}
-
-.main-pic{
-  display: flex;
-  justify-content: center;
-  height:150px;
-}
-
-.wel{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  color: #f47d26;
-
-}
 
 /* Menu Screen & MenuButton CSS */
 
-
-
-.menu-home-butn {
-  padding:0;
-  margin-top: .5em;
-  right: 6em;
-  position: relative;
-  font-family: Helvetica, sans-serif;
-  color: black;
-  font-size:1.5em;
-  font-weight: 500;
-}
 
 .menu-container {
   display:flexbox;
@@ -530,12 +489,44 @@ margin-top:10em;
 
 }
 
+.main{
+  display: flex;
+  justify-content: center;
+  height:100px;
+  width:100px;
+
+}
+
+.wel-title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  font-family:  Helvetica, sans-serif;
+  color: #f47d26;
+  font-weight: 600;
+}
+
+.main-pic{
+  display: flex;
+  justify-content: center;
+  height:150px;
+}
+
+.wel{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  color: #f47d26;
+
+}
+
+.login-home-butn{
+
+  
+}
+
 
 /* UserHome CSS */
-
-
-
-
 
 
 .vector{
