@@ -127,7 +127,7 @@ html{
   margin-top:1em;
 }
 
-*,
+
 *::before,
 *::after {
   margin: 0;
@@ -347,39 +347,9 @@ stroke-dashoffset:0;
   font-weight:bold;
 }
 
-.menu-title{
-  margin-bottom: 1em;
-  color: #f47d26;
-}
 
-.main{
- margin-top:3em;
-}
 
-.main-but a {
-  font-size: 1em;
-  text-decoration: none;
-  text-decoration-color: #f47d26;
-  
-}
 
-.main-but:hover, .main-but:active{
-  color: #f47d26;
-  text-decoration: none;
-}
-
- .main-but{
-  text-align: center;
-  width: 15em;
-  height: 5em;
-  margin-bottom: 1.25em;
-  background-color: #243e90;
-  border-radius: 25pt;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  
- }
   
  .signup-but{
   width: 15em;
@@ -414,18 +384,6 @@ stroke-dashoffset:0;
   text-decoration:none;
 }
 
-.copyright-code{
-  margin-top: 3em;
-  font-family: Arial, 'Helvetica';
-}
-
-.copyright{
-  margin-top: 10em;
-}
-
-.fa-copyright{
-  font-size: 1em;
-}
 
 
 
@@ -461,19 +419,13 @@ stroke-dashoffset:0;
     transition-duration: 0.15s, 0.15s;
     transition-timing-function: ease-in-out, ease-in-out;
     transition-delay: 0s, 0s;
+    margin-bottom:2em;
 }
 
 
-
-.btn:hover{background-color: #f47d26; }
-
-.btn:active {
-background-color: #243e90;
-transform: translateY(4px);
-}
 
 .pw{
-  margin-left: 60%;
+  margin-left: 40%;
 }
 .link{
   margin-left: 5%;
@@ -484,14 +436,37 @@ transform: translateY(4px);
   justify-content: center;
 }
 
-.page-login{
-margin-top:10em;
+.next{
+  text-align: center;
+  width: 15em;
+  height: 5em;
+  background-color: #243e90;
+  border-radius: 15pt;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  font-weight: 600;
+  margin-bottom:-3em;
+}
 
+.complete{
+  text-align: center;
+  width: 15em;
+  height: 5em;
+  margin-top:2em;
+  background-color: #243e90;
+  border-radius: 15pt;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  font-weight: 600;
 }
 
 .main{
+  margin-top:3em;
   display: flex;
   justify-content: center;
+  margin-top:4em;
   height:100px;
   width:100px;
 
@@ -506,24 +481,38 @@ margin-top:10em;
   font-weight: 600;
 }
 
-.main-pic{
-  display: flex;
-  justify-content: center;
-  height:150px;
+ 
+ 
+  .main-but{
+   text-align: center;
+   width: 15em;
+   height: 5em;
+   margin-bottom: 1.25em;
+   background-color: #243e90;
+   border-radius: 15pt;
+   color: white;
+   text-align: center;
+   padding: .5em;
+   font-weight: 600;
+   
+  }
+
+
+
+.copyright-code{
+  margin-top: 3em;
+  font-family:  'Helvetica', sans-serif;
 }
 
-.wel{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-  color: #f47d26;
-
+.copyright{
+  margin-top: 1em;
 }
 
-.login-home-butn{
-
-  
+.fa-copyright{
+  font-size: 1em;
+  font-weight: 500;
 }
+
 
 
 /* UserHome CSS */
@@ -543,6 +532,7 @@ margin-top:10em;
   padding: 	10px 10px 10px 10px;
   margin-top: 1em;
   margin-bottom:1em;
+  margin-right: 1em;
   border: none;
   border-radius: 10px;
   background-color: #243e90;
@@ -552,19 +542,27 @@ margin-top:10em;
 }
 
 .pro{
- margin-right: 2em;
+margin-left:1em;
 
 }
 
 .English{
 text-align: center;
 
+
 }
 
-.play{
-  margin-left: 2em;
+.play {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  background-color: #243e90;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
 }
-
 
 p {
     font-family: sans-serif;
@@ -590,19 +588,7 @@ p {
   color: #fefefe;
 }
 
-.play-now{
-  min-width: 100%;
-  border: none;
-  border-radius: 30px;
-  background-color: #243e90;
-  font-family: sans-serif;
-  color: white;
-  font-weight: bolder;
-}
 
- .play-now:active{
-  background-color: #f47d26;
-}
 
 
 
@@ -611,15 +597,23 @@ p {
 
 /* English Instructions CSS */
 
+.title{
+  color: #f47d26;
+  margin-bottom: .5em;
+}
+
 .English-page{
   margin-top:4em;
+  margin-left: .5em;
+  margin-right:.5em;
 }
 
 .English-instruct {
-  min-width: 100%;
   margin-top: 10px;
+  width:100px;
+  height: 100px;
   border: none;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: #243e90;
   font-family: sans-serif;
   color: white;
@@ -627,26 +621,65 @@ p {
 }
 
 .instructionss{
-  margin-bottom:3em;
+  margin-bottom:2em;
 }
 
+.instruct-play{
+  margin-top: 10px;
+  width:10px;
+  height: 100px;
+  border: none;
+  border-radius: 15px;
+  background-color: #243e90;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bold;
+  
+}
 
 /* Spanish Instructions CSS */
 
-.user-direct.regresar{
-
-  padding: .1em;
- 
+.regresar{
+  width: 120px;
+  height:70px;
+  padding: 	5px 10px 0px 8px;
+  margin-top:-1em;
+  border: none;
+  border-radius: 15px;
+  background-color: #243e90;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .Spanish-instruct{
-  padding:0; 
+  width: 120px;
+  height:100px;
+  margin-right:1em;
+  padding: 	8px 10px 8px 8px;
+  border: none;
+  border-radius: 15px;
+  background-color: #243e90;
+  font-family: sans-serif;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.Spanish-English{
+  margin-top:1em;
 }
 
 .Spanish-page{
-  margin-top:4em;
+  margin-top:4.5em;
+  margin-left: .5em;
+  margin-right:.5em;
 }
 
+.Spanish-title{
+  color:#f47d26;
+}
 
 
 
@@ -781,8 +814,7 @@ p {
 
 .score-board {
     margin: 20px auto;
-    margin-top:1.5em;
-    border: 3px solid black;
+    margin-top:1.8em;
     width:80%;
     border-radius: 4px;
     text-align: center;
@@ -792,41 +824,131 @@ p {
     font-family: sans-serif;
     position: relative;
   background: transparent;
-  
+  transform: rotate(90deg);
 }
 
 
-.score-board::before{   
-transition: 0.5;
-
+.score-board:nth-child(1)
+{
+    transform: rotate(0deg);
+}
+.score-board:nth-child(2)
+{
+    transform: rotate(90deg);
 }
 
-
-.score-board:hover:before{
-left: -50%;
-}
-
-
-.badge {
+.score-board:before{
+ width:250px;
+ border-radius: 4px;
+border: 2px solid #f47d26;
+content:'';
+position: absolute;
+height: 2px;
 background: #f47d26;
-color: whitesmoke;
-font-size: .75em;
+left: -0%;
+top: -5px;
+animation: animate 4s linear infinite;
+}
+@keyframes animate 
+{
+    0%
+    {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50%
+    {
+        transform: scaleX(1);
+        transform-origin: left;
+        
+    }
+     50.1%
+    {
+        transform: scaleX(0);
+        transform-origin: right;
+        
+    }
+   100%
+    {
+        transform: scaleX(0);
+        transform-origin: right;
+        
+    }
+
+
+}
+
+
+.score-board::after{
+ width:250px;
+ border-radius: 4px;
+border: 2px solid #f47d26;
+content:'';
+position: absolute;
+height: 2px;
+background: #f47d26;
+left: 0%;
+top: 100px;
+ transform: rotate(90deg);
+animation: animate 4s linear infinite;
+animation-direction: 6s reverse;
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50%
+    {
+        transform: scaleX(1);
+        transform-origin: left;
+        
+    }
+    50.1%
+    {
+        transform: scaleX(1);
+        transform-origin: right;
+        
+    }
+
+   100%
+    {
+        transform: scaleX(0);
+        transform-origin: left;
+        
+    }
+
+
+}
+
+.badge span  {
+background: #cc5500;
+color:#f47d26;
+font-size: 14px;
+padding: 4px 10px;
 font-family: sans-serif;
 }
 
 
 #user-label{
 position: absolute;
-color:white;
-top: 25px;
+color:#f47d26;
+top: 20px;
 left: -25px;
 }
 
 #computer-label{
 position: absolute;
-color:white;
-top: 25px;
+color: #f47d26;
+top: 20px;
 right: -23px;
+}
+.fas{
+height: 0;
+width: 2;
 }
 
 .selectionButton{
@@ -834,8 +956,8 @@ right: -23px;
   border-radius: 50%;
   padding: 10px;
   display: inline-block;
-  margin: 0 30px 0 ;
-  margin-top: -1em;
+  margin: 0 40px 50 ;
+  margin-top: -.8em;
   margin-bottom:-1em;
   text-align: center;
   height: 100px;
@@ -845,22 +967,24 @@ right: -23px;
 
 
 .play-btn{
-
-border-radius: 25px;
+  border-radius: 15px;
   background:#f47d26;
   color:#243e90;
   position: relative;
-  bottom:.5em;
   top:1em;
   text-align: center;
   padding: 1em;
-
+  font-weight:550;
+  font-size: 1.35em;
+  margin-top: -.5em;
 }
 
 .who-win{
   font-family: 'Bungee', Helvetica, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.35em;
+  margin: 0 -.1em 0 -.1em;
 }
+
 
 .game-nav{
   margin-top:1.5em;
@@ -873,20 +997,23 @@ border-radius: 25px;
   justify-content: space-between;
   justify-content: center;
   margin-top: -1em;
+ 
 }
 
 .player-image{
   width: 15vmax;
   height: 15vmax;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
   margin-right: 1em;
   
 }
 
 .computer-hand {
-  height: 15vmax;
+  height: 13vmax;
   width: 15vmax;
 }
+
+
 
 
 
@@ -934,18 +1061,12 @@ border-radius: 25px;
    margin-left: .03em;
  }
 
-
-
-
-
-
-
-
- 
+ .play.Spanish-instruct{
+   width: 120px;
+ }
 
  
 }
-
  
 
 
