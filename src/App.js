@@ -35,7 +35,6 @@ function App() {
                   <Route exact path="/" component={SecondMainWelcome} />
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
-                  <Route path="/avatar" component={Avatar} />
                   <Route path="/userhome" component={UserHome} />
                   <Route path="/game" component={Game} />
                   <Route path="/forgotpw" component={ForgotPassword} />

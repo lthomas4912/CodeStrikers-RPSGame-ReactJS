@@ -9,8 +9,7 @@ import scissors from '../../assets/images/scissors.png';
 import questionMark from '../../assets/images/question-mark.png';
 
 
-const selection = ["rock", "paper", "scissors"];
-const compSelection = [ "questionMark", "comprock", "compscissors", "comppaper"];
+const compSelection = [ "comprock", "compscissors", "comppaper"];
 
 
 
@@ -19,7 +18,7 @@ export default class Game extends Component {
 
     state = {
         playerOne: "" ,
-        computer: compSelection[0],
+        computer: "",
         winner: "",
         playerWin: 0,
         computerWin: 0,
@@ -36,7 +35,7 @@ export default class Game extends Component {
         let gameInterval = setInterval(() => {
             count++;
             this.setState({
-            computer: compSelection[Math.floor(Math.random() * compSelection.length)],
+            computer: compSelection[Math.floor(Math.random() * 3)],
             winner: "",
         });
 

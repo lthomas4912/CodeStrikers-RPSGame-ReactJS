@@ -15,7 +15,8 @@ import questionMark from '../../assets/images/question-mark.png';
                     <img
                         className="computer-hand"
                         src={
-                            compSelection === "comprock" ? comprock : compSelection === "compscissors" ? compscissors : comppaper
+                            compSelection === "comprock" ? comprock : compSelection === "compscissors" ? compscissors : 
+                            compSelection === "comppaper" ? comppaper : questionMark
 
                         }
                         alt="Rock paper scissors"
