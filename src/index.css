@@ -390,7 +390,7 @@ stroke-dashoffset:0;
 /* Login & Sign-up CSS */
 
 .sign-title{
-  margin-bottom:1.75em;
+  margin-bottom:1.5em;
 }
 
 .sign-page{
@@ -425,10 +425,14 @@ stroke-dashoffset:0;
 
 
 .pw{
-  margin-left: 40%;
+margin-top: 1.5em;
+}
+
+.sign{
+
 }
 .link{
-  margin-left: 5%;
+
 }
 
 .forgot-title{
@@ -438,15 +442,22 @@ stroke-dashoffset:0;
 
 .next{
   text-align: center;
-  width: 15em;
-  height: 5em;
   background-color: #243e90;
   border-radius: 15pt;
   color: white;
-  text-align: center;
-  padding: 2em;
+  padding:20px;
   font-weight: 600;
   margin-bottom:-3em;
+}
+
+.sign-next{
+    text-align: center;
+  background-color: #243e90;
+  border-radius: 15pt;
+  color: white;
+  padding:20px;
+  font-weight: 600;
+  margin-bottom:1em;
 }
 
 .complete{
@@ -457,7 +468,6 @@ stroke-dashoffset:0;
   background-color: #243e90;
   border-radius: 15pt;
   color: white;
-  text-align: center;
   padding: 2em;
   font-weight: 600;
 }
@@ -466,7 +476,6 @@ stroke-dashoffset:0;
   margin-top:3em;
   display: flex;
   justify-content: center;
-  margin-top:4em;
   height:100px;
   width:100px;
 
@@ -491,7 +500,6 @@ stroke-dashoffset:0;
    background-color: #243e90;
    border-radius: 15pt;
    color: white;
-   text-align: center;
    padding: .5em;
    font-weight: 600;
    
@@ -549,7 +557,10 @@ margin-left:1em;
 .English{
 text-align: center;
 
+}
 
+.bottom{
+    margin-left: 1em;
 }
 
 .play {

@@ -38,11 +38,9 @@ export default class WelcomeScreen extends Component {
                     </div>
                 </div>
 
-                <UserHomeButton className="login-home-butn" />
-                <p className="pw">Forgot 
-                        <Link className="link"to="/forgotpw"> Password</Link>
-                        ?
-                    </p>
+                <UserHomeButton  />
+                <p className="pw">Forgot <Link className="link"to="/forgotpw"> Password</Link>?</p>
+                <p className="sign">Sign Up <Link className="link" to="sign-up">Here</Link>!</p>
             </form>
 
                  <Row className="copyright"><i class="far fa-copyright"> <span className="copyright-code">Code Differently</span></i></Row>

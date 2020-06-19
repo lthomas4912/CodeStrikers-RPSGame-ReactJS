@@ -10,7 +10,7 @@ export default function UserHomeButton() {
      const Button = withRouter(({history}) => (
         <button
          type="button" 
-         
+         className="next"
          onClick={() => {history.push('/userhome')}}> 
          Let's Go! 
          </button>

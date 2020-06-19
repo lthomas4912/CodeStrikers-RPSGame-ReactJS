@@ -37,7 +37,7 @@ export default class SignUp extends Component {
                     <input type="password" className="form-cntrl" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="user-direct " to="/userhome">Submit</button>
+                <button type="submit" className="sign-next" to="/userhome">Submit</button>
                 <p className="forgot-password text-right">
                     Already registered? <a href="/sign-in">Click Here!</a>
                 </p>
