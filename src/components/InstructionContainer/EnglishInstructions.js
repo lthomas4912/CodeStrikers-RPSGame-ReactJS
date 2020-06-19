@@ -32,8 +32,8 @@ export default class EnglishInstruction extends Component{
                     click “Play again” button after a game is finished. 
 
                 </p>
-                <Row className=" user-direct Spanish-instruct"> <InstruccionesButton /> </Row>
-                <Row className=" user-direct English-instruct"><PlayButton /></Row>
+                <Row> <InstruccionesButton /> </Row>
+                <Row ><PlayButton /></Row>
                 
             </form>
         )

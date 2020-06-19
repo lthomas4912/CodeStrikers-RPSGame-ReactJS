@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom';
         <button
         type = "button"
         onClick = {() => {history.push('/spanishinstructions')}}
-        className=" user-direct Spanish-instruct ">
+        className="Spanish-instruct">
         Instrucciones
         </button>
     ));

@@ -40,7 +40,7 @@ export default class SpanishInstruction extends Component{
                     Complete my avatar = completar mi avatar Login = Inicia Sesion
                 </p>
                
-                <Row className="user-direct regresar" ><RegresarButton /></Row>
+                <Row  ><RegresarButton /></Row>
             </form>
         )
     }

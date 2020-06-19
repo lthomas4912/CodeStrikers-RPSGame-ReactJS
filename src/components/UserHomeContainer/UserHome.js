@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,7 +30,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
                     <button className ="userhome-but request" to="/friend-requests">Friend Requests</button> </Row>
              
                    <div className="bottom"> <EnglishInstructionsButton className="userhome-but English"/>              
-                    <PlayButton /> </div>
+                    <Link className="play" to="game">Play Now!</Link></div>
                     <p>
                        Donate $1 or more to fund our Youth Technology
                        Learning Program based in Wilmington, DE.</p> 
