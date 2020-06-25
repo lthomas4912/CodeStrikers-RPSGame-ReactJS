@@ -1,6 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
+import Amplify from 'aws-amplify';
+import awsmobile from './aws-exports.js'; 
+import { withAuthenticator } from '@aws-amplify/ui-react';
+
+
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
@@ -21,7 +26,7 @@ import SecondBottomNavBar from './components/NavbarContainer/SecondBottomNavBar.
 import SecondMainWelcome from './components/MainWelcomeContainer/SecondMainWelcome.js';
 
 
-
+Amplify.configure(awsmobile);
 
 function App() {
   return (
@@ -42,6 +47,7 @@ function App() {
                   <Route path="/SpanishInstructions" component={SpanishInstructions} />
                   
                 </Switch>
+               
               </Row>
             
           </div>
@@ -52,7 +58,8 @@ function App() {
   );
 }
 
-export default App;
+
+export default withAuthenticator(App);
 
 
 
